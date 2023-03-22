@@ -17,7 +17,12 @@
                             </div>
                         @endif
                         {{ __('You are logged in!') }}
-
+                        <button class="text-orange-500 underline float-right hover:scale-110" title="&#128393 Manage your exixting products here" id="edit_button">Edit</button>
+                        <br>
+                        <div class="mt-2">
+                            <h1 class="font-bold">Welcome to Administrative Dashboard</h1>
+                            <h2>You can Edit and Add your products here.</h2>
+                        </div>
                     </div>
                 </div>
 
@@ -31,9 +36,8 @@
                                 <input
                                     class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50  focus:outline-none p-2"
                                     type="file" name="image" accept="image/png" onchange="loadFile(event)" required>
-                                <div class="w-64 h-64 flex justify-center items-center m-auto mt-4">
-                                    <img src="/img/icon-upload.png" alt=""
-                                        class="h-64 my-4 m-auto  object-center w-64" id="output">
+                                <div class="w-64 h-64 flex m-auto justify-center mt-4">
+                                    <img src="/img/icon-upload.png" alt="" class="h-64 my-4  w-64" id="output">
                                 </div>
                                 <p class="text-gray-400 mt-4 text-center">Note: PNG file only.</p>
 

@@ -20,7 +20,7 @@
 
     {{-- START HEADER --}}
 
-    <header class="bg-orange-900 text-white sticky top-0 z-50 font-['Poppins'] dark:bg-white dark:text-orange-900">
+    <header class="bg-orange-900 text-white sticky top-0 z-50 font-['Poppins'] shadow-2xl rounded-xl dark:text-orange-900">
         <section class="max-w-7xl mx-auto p-4 flex justify-between items-center">
             <h1 class="text-4xl font-bold font-['Poppins']">
                 <a href="/"><span class="text-orange-500">bu</span>rger dungeon.</a>
@@ -31,9 +31,9 @@
                 </button>
                 <nav class="hidden sm:block space-x-8 text-xl font-semibold" aria-label="main">
                     <a href="#food" class="hover:opacity-90">Foods</a>
-                    <a href="" class="hover:opacity-90">Our Products</a>
                     <a href="#contacts" class="hover:opacity-90">Contacts</a>
                     <a href="#about" class="hover:opacity-90">About Us</a>
+                    <button class="bg-orange-500 p-2 rounded-2xl shadow-xl hover:scale-110 px-4 border-b-4 border-orange-700">&#128722 Our Product</button>
                 </nav>
             </div>
         </section>
@@ -65,7 +65,9 @@
                 </h3>
                 <br>
             </article>
-            <img class="w-11/12 sm:w-5/4 animate-waving-hand" src="img/burger.png" alt="burger">
+            <div class="w-11/12 sm:w-5/4 transition duration-500 hover:scale-110">
+                <img class="animate-waving-hand w-11/12 m-auto sm:m-none" src="img/burger.png" alt="burger">
+            </div>
         </section>
         {{-- END LANDING PAGE --}}
 
@@ -176,7 +178,7 @@
 
         <div class="flex flex-col-reverse justify-center sm-flex-row  items-center">
             <a href="productlist.html"
-                class="font-['Poppins'] bg-orange-500 hover:bg-orange-400 text-white font-semibold py-2 px-8 text-xl border-b-4 border-orange-700 hover:border-orange-50 rounded-full">
+                class="font-['Poppins'] bg-orange-500 hover:scale-110 text-white font-semibold py-2 px-8 text-xl border-b-4 border-orange-700 rounded-full">
                 See More</a>
         </div>
 
@@ -253,12 +255,12 @@
             <div class="container mx-auto mb-32 sm:my-10  sm:shadow-lg sm:rounded-2xl">
                 <div class="grid grid-cols-1 md:grid-cols-2 h-screen">
                     <div class="max-h-96 md:h-20">
-                        <img class="w-screen h-screen object-cover object-top"
-                            src="img/logo.png" alt="">
+                        <img class="w-screen h-screen object-cover object-top" src="img/logo.png" alt="">
                     </div>
                     <div class="flex bg-white shadow-xl rounded-lg sm:bg-transparent sm:shadow-none sm:rounded-none">
                         <div class="mb-auto mt-auto max-w-lg">
-                            <h1 class="text-5xl uppercase text-orange-500 font-bold font-['Poppins'] text-center mt-5 mx-2">
+                            <h1
+                                class="text-5xl uppercase text-orange-500 font-bold font-['Poppins'] text-center mt-5 mx-2">
                                 Burger Dungeon
                             </h1>
                             <p class="font-semilight text-orange-400 mb-5 font-['Poppins'] text-center text-3xl mx-4">
