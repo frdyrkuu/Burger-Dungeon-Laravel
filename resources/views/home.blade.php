@@ -17,8 +17,8 @@
                             </div>
                         @endif
                         {{ __('You are logged in!') }}
-                        <button class="text-orange-500 underline float-right hover:scale-110"
-                            title="&#9999 Manage your exixting products here" id="edit_button">Edit</button>
+                        <button class="bg-orange-500 p-3 py-2 rounded-2xl text-white font-bold float-right hover:scale-110"
+                            title="&#9999 Manage your exixting products here" id="edit_button">Add Product</button>
                         <br>
                         <div class="mt-2">
                             <h1 class="font-bold">Welcome to Administrative Dashboard</h1>
@@ -28,6 +28,7 @@
                 </div>
 
                 {{-- SECTION FOR UPLOAD PRODUCTS --}}
+                {{-- grid --}}
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
 
                     <div class="card mt-2 rounded-2xl h-fit">
@@ -77,7 +78,6 @@
                                 <option value="icecream">Ice Cream</option>
                             </select>
 
-
                             <input type="submit" name="upload"
                                 class="bg-orange-500 rounded-xl px-4 py-2 text-white w-full mt-5">
 
@@ -88,14 +88,80 @@
             </div>
             {{-- END OF UPLOAD PRODUCTS  --}}
 
-            {{-- START OF DASHBOARD TABLE --}}
-            <div>
+        </div>
+
+        {{-- START OF DASHBOARD TABLE --}}
+        <div class="border p-2 bg-gray-100 mt-4 rounded-lg w-full sm:w-3/4 m-auto">Table</div>
+
+        <div class="card-body h-3/4 w-full sm:w-3/4 m-auto">
+            <div class="h-3/4 overflow-y-auto relative">
+                <div class="overflow-x-auto shadow-2xl">
+                    <table class="table-auto min-w-full divide-y divide-gray-200  rounded-2xl">
+                        <thead>
+                            <tr>
+                                <th
+                                    class="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                    Product Name</th>
+                                <th
+                                    class="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                    Description</th>
+                                <th
+                                    class="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                    Category</th>
+                                <th
+                                    class="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                    Image</th>
+                                <th
+                                    class="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                    ID</th>
+                                <th
+                                    class="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                    Actions</th>
+
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-200">
+                            @foreach ($products as $item)
+                                <tr class="bg-white border-b">
+                                    <th scope="row" class="px-6 py-4 font-bold text-orange-500 whitespace-nowrap">
+                                        {{ $item->name }}
+                                    </th>
+                                    <td class="px-6 py-4">
+                                        {{ $item->description }}
+                                    </td>
+                                    <td class="px-6 py-4">
+                                        {{ $item->category }}
+                                    </td>
+                                    <td class="px-6 py-4">
+                                        <div class="flex-shrink-0 h-10 w-10">
+                                            <img src="{{ asset('uploads/images/' . $item->images) }}"
+                                                alt="{{ $item->name }}">
+                                        </div>
+                                    </td>
+                                    <td class="px-6 py-4">
+                                        {{ $item->id }}
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                        <input type="text" value=" {{ $item->id }}" hidden>
+                                        <button class="text-blue-500 hover:text-blue-700 mr-2">Edit</button>
+                                        <button class="text-red-500 hover:text-red-700"
+                                            onclick="deleteData({{ $item->id }})">Delete</button>
+                                    </td>
+                                </tr>
+                            @endforeach
+                        </tbody>
+                    </table>
+                </div>
 
             </div>
-            {{-- END OF DASHBOARD TABLE --}}
-
         </div>
+
+        {{-- END OF DASHBOARD TABLE --}}
+
+
+
 
     </div>
 @endsection
 <script src="/display.js"></script>
+<script src="/swal.js"></script>

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PhotoController;
 use Illuminate\Support\Facades\Route;
 
@@ -18,11 +19,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/home', [PhotoController::class, 'index'])->name('home');
+
 Route::get('/upload', [PhotoController::class, 'create'])->name('home');
 Route::post('/upload', [PhotoController::class, 'store'])->name('home');
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-

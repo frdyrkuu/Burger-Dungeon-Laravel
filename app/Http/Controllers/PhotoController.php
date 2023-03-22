@@ -5,8 +5,11 @@ namespace App\Http\Controllers;
 use App\Models\Products;
 use Illuminate\Http\Request;
 
+use Illuminate\Support\Facades\DB;
+
 class PhotoController extends Controller
 {
+
     //
     public function create()
     {
@@ -24,7 +27,7 @@ class PhotoController extends Controller
         $description = $_POST['description'];
         $category = $_POST['product'];
 
-        $request->file('image')->store('public/images/');
+        $request->file('image')->move('uploads/images/', $final_image_name);
         $photo = new Products();
         $photo->name = $product_name;
         $photo->description = $description;
@@ -34,4 +37,6 @@ class PhotoController extends Controller
         $photo->save();
         return redirect()->back();
     }
+
+
 }
