@@ -17,7 +17,8 @@
                             </div>
                         @endif
                         {{ __('You are logged in!') }}
-                        <button class="text-orange-500 underline float-right hover:scale-110" title="&#128393 Manage your exixting products here" id="edit_button">Edit</button>
+                        <button class="text-orange-500 underline float-right hover:scale-110"
+                            title="&#9999 Manage your exixting products here" id="edit_button">Edit</button>
                         <br>
                         <div class="mt-2">
                             <h1 class="font-bold">Welcome to Administrative Dashboard</h1>
@@ -26,6 +27,7 @@
                     </div>
                 </div>
 
+                {{-- SECTION FOR UPLOAD PRODUCTS --}}
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
 
                     <div class="card mt-2 rounded-2xl h-fit">
@@ -83,9 +85,17 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            {{-- END OF UPLOAD PRODUCTS  --}}
+
+            {{-- START OF DASHBOARD TABLE --}}
+            <div>
 
             </div>
+            {{-- END OF DASHBOARD TABLE --}}
+
         </div>
+
     </div>
 @endsection
 <script src="/display.js"></script>

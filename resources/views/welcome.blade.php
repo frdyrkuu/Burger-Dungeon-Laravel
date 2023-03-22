@@ -22,7 +22,7 @@
 
     <header class="bg-orange-900 text-white sticky top-0 z-50 font-['Poppins'] shadow-2xl rounded-xl dark:text-orange-900">
         <section class="max-w-7xl mx-auto p-4 flex justify-between items-center">
-            <h1 class="text-4xl font-bold font-['Poppins']">
+            <h1 class="text-4xl font-bold font-['Poppins']  transition duration-500 hover:scale-110">
                 <a href="/"><span class="text-orange-500">bu</span>rger dungeon.</a>
             </h1>
             <div>
@@ -30,10 +30,10 @@
                     ☰
                 </button>
                 <nav class="hidden sm:block space-x-8 text-xl font-semibold" aria-label="main">
-                    <a href="#food" class="hover:opacity-90">Foods</a>
-                    <a href="#contacts" class="hover:opacity-90">Contacts</a>
-                    <a href="#about" class="hover:opacity-90">About Us</a>
-                    <button class="bg-orange-500 p-2 rounded-2xl shadow-xl hover:scale-110 px-4 border-b-4 border-orange-700">&#128722 Our Product</button>
+                    <a href="#food" class="transition duration-500">Foods</a>
+                    <a href="#contacts" class="transition duration-500">Contacts</a>
+                    <a href="#about" class="transition duration-500">About Us</a>
+                    <button class="bg-orange-500 p-2 rounded-2xl shadow-xl transition duration-500 hover:scale-110 px-4 border-b-4 border-orange-700">&#128722 Our Product</button>
                 </nav>
             </div>
         </section>
@@ -48,7 +48,7 @@
         <section class="flex flex-col-reverse justify-center sm:flex-row p-6 items-center gap-4 mb-12">
             <article class="sm:w-1/2 ">
                 <h2
-                    class="text-6xl font-extrabold text-center sm:text-left sm:text-6xl text-orange-500 dark:text-white">
+                    class="text-6xl font-extrabold text-center sm:text-left sm:text-6xl text-orange-500">
                     Welcome to <span class="text-orange-900">bu</span>rger dungeon.
                 </h2>
                 <br>
