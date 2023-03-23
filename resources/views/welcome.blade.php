@@ -16,7 +16,7 @@
 
 </head>
 
-<body class="body antialiased dark:bg-dots-lighter">
+<body class="body antialiased">
 
     {{-- START HEADER --}}
 
@@ -33,7 +33,7 @@
                     <a href="#food" class="transition duration-500">Foods</a>
                     <a href="#contacts" class="transition duration-500">Contacts</a>
                     <a href="#about" class="transition duration-500">About Us</a>
-                    <button class="bg-orange-500 p-2 rounded-2xl shadow-xl transition duration-500 hover:scale-110 px-4 border-b-4 border-orange-700">&#128722 Our Products</button>
+                    <a href="/productlist" class="bg-orange-500 p-2 rounded-2xl shadow-xl transition duration-500 hover:scale-110 px-4 border-b-4 border-orange-700">&#128722 Our Products</a>
                 </nav>
             </div>
         </section>
@@ -177,7 +177,7 @@
         {{-- END PRODUCT --}}
 
         <div class="flex flex-col-reverse justify-center sm-flex-row  items-center">
-            <a href="productlist.html"
+            <a href="/productlist"
                 class="font-['Poppins'] bg-orange-500 hover:scale-110 text-white font-semibold py-2 px-8 text-xl border-b-4 border-orange-700 rounded-full">
                 See More</a>
         </div>

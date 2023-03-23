@@ -19,7 +19,13 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/productlist', function () {
+    return view('productlist');
+});
+
 Route::get('/home', [PhotoController::class, 'index'])->name('home');
+
+Route::get('/productlist', [App\Http\Controllers\ProductlistController::class, 'List']);
 
 Route::get('/upload', [PhotoController::class, 'create'])->name('home');
 Route::post('/upload', [PhotoController::class, 'store'])->name('home');

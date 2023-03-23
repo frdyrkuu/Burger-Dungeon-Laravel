@@ -35,7 +35,7 @@ function modalDefault() {
         document.querySelector('.product-img').setAttribute("src", image1);
         document.querySelector('.product-title').textContent = title1;
 
-        
+
         document.querySelector('.product-desc').textContent = desc1;
     });
 
