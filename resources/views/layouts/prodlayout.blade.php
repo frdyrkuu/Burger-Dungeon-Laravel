@@ -10,6 +10,7 @@
 
     @vite('resources/css/app.css')
     <link rel="stylesheet" href="/header.css">
+    <script src="/display.js"></script>
 </head>
 
 <body class="font-['Poppins']">
@@ -19,7 +20,7 @@
                 <a href="/"><span class="text-orange-500">bu</span>rger dungeon.</a>
             </h1>
             <div>
-                <button id="mobile-open-button" class="text-3xl sm:hidden focus:outline-none">
+                <button onclick="hamburger()" class="text-3xl sm:hidden focus:outline-none">
                     ☰
                 </button>
                 <nav class="hidden sm:block space-x-8 text-xl font-semibold" aria-label="main">
@@ -31,24 +32,37 @@
                 </nav>
             </div>
         </section>
+        <section id="mobile-menu"
+            class="hidden absolute top-0 bg-orange-900 opacity-90 w-full text-5xl flex-col justify-content-center origin-top animate-open-menu">
+            <button class="text-8xl self-end px-6" onclick="hamburger()">&times;</button>
+
+            <nav class="flex flex-col min-h-screen items-center py-8" aria-label="mobile">
+                <a href="" class="w-full text-center py-6 hover:opacity-90">Burger</a>
+                <a href="" class="w-full text-center py-6 hover:opacity-90">Fries</a>
+                <a href="" class="w-full text-center py-6 hover:opacity-90">Barbeque</a>
+                <a href="" class="w-full text-center py-6 hover:opacity-90">Drinks</a>
+                <a href="" class="w-full text-center py-6 hover:opacity-90">Ice Cream</a>
+            </nav>
+        </section>
     </header>
     <main class="max-w-7xl mx-auto ">
         @yield('content')
 
-        <button id="scroll-btn" onclick="scrollToBottom()" class="fixed bottom-4 right-4 rounded-full bg-orange-500 text-white w-10 h-10 flex items-center justify-center mb-10 animate-bounce">
+        <button id="scroll-btn" onclick="scrollToBottom()"
+            class="fixed bottom-4 right-4 rounded-full bg-orange-500 text-white w-10 h-10 flex items-center justify-center mb-10 animate-bounce">
             <svg viewBox="0 0 24 24" width="24px" height="24px">
-              <path fill="currentColor" d="M7,10L12,15L17,10H7Z" />
+                <path fill="currentColor" d="M7,10L12,15L17,10H7Z" />
             </svg>
-          </button>
+        </button>
 
-          <script>
+        <script>
             function scrollToBottom() {
-              window.scrollTo({
-                top: document.body.scrollHeight,
-                behavior: "smooth"
-              });
+                window.scrollTo({
+                    top: document.body.scrollHeight,
+                    behavior: "smooth"
+                });
             }
-            </script>
+        </script>
     </main>
 
     {{-- START FOOTER --}}

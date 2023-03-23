@@ -18,7 +18,7 @@
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-
+    <script src="/display.js"></script>
 
     @viteReactRefresh
     @viteReactRefresh
@@ -36,7 +36,7 @@
                 <a href="/"><span class="text-orange-500">bu</span>rger dungeon.</a>
             </h1>
             <div>
-                <button id="mobile-open-button" class="text-3xl sm:hidden focus:outline-none">
+                <button onclick="hamburger()" class="text-3xl sm:hidden cursor-pointer">
                     ☰
                 </button>
                 <nav class="hidden sm:block space-x-8 text-xl font-semibold" aria-label="main">
@@ -80,6 +80,25 @@
 
                 </nav>
             </div>
+        </section>
+
+        <section id="mobile-menu"
+            class="hidden absolute top-0 bg-orange-900 opacity-90 w-full text-5xl flex-col justify-content-center origin-top animate-open-menu">
+            <button class="text-8xl self-end px-6" onclick="hamburger()">&times;</button>
+
+            <nav class="flex flex-col min-h-screen items-center py-8" aria-label="mobile">
+
+                @if (Route::has('register'))
+                    <a class="w-full text-center py-6 hover:opacity-90"
+                        href="{{ route('register') }}">{{ __('Register') }}</a>
+                @endif
+
+                <a href="" class="w-full text-center py-6 hover:opacity-90">Foods</a>
+                <a href="" class="w-full text-center py-6 hover:opacity-90">Contacts</a>
+                <a href="" class="w-full text-center py-6 hover:opacity-90">About Us</a>
+                <a href="" class="w-full text-center py-6 hover:opacity-90">Our Products</a>
+
+            </nav>
         </section>
     </header>
 

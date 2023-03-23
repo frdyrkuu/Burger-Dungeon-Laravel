@@ -13,7 +13,7 @@
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     @vite('resources/css/app.css')
     <link rel="stylesheet" href="/header.css">
-
+    <script src="/display.js"></script>
 </head>
 
 <body class="body antialiased font-['Poppins']">
@@ -26,18 +26,32 @@
                 <a href="/"><span class="text-orange-500">bu</span>rger dungeon.</a>
             </h1>
             <div>
-                <button id="mobile-open-button" class="text-3xl sm:hidden focus:outline-none">
+                <button onclick="hamburger()" class="text-3xl md:hidden cursor-pointer">
                     ☰
                 </button>
-                <nav class="hidden sm:block space-x-8 text-xl font-semibold" aria-label="main">
+                <nav class="hidden md:block space-x-8 text-xl font-semibold" aria-label="main">
                     <a href="#food" class="transition duration-500">Foods</a>
                     <a href="#contacts" class="transition duration-500">Contacts</a>
                     <a href="#about" class="transition duration-500">About Us</a>
-                    <a href="/productlist" class="bg-orange-500 p-2 rounded-2xl shadow-xl transition duration-500 hover:scale-110 px-4 border-b-4 border-orange-700">&#128722 Our Products</a>
+                    <a href="/productlist"
+                        class="bg-orange-500 p-2 rounded-2xl shadow-xl transition duration-500 hover:scale-110 px-4 border-b-4 border-orange-700">&#128722
+                        Our Products</a>
                 </nav>
             </div>
         </section>
+        <section id="mobile-menu"
+            class="hidden absolute top-0 bg-orange-900 opacity-90 w-full text-5xl flex-col justify-content-center origin-top animate-open-menu">
+            <button class="text-8xl self-end px-6" onclick="hamburger()">&times;</button>
+
+            <nav class="flex flex-col min-h-screen items-center py-8" aria-label="mobile">
+                <a href="" class="w-full text-center py-6 hover:opacity-90">Foods</a>
+                <a href="" class="w-full text-center py-6 hover:opacity-90">Contacts</a>
+                <a href="" class="w-full text-center py-6 hover:opacity-90">About Us</a>
+                <a href="" class="w-full text-center py-6 hover:opacity-90">Our Products</a>
+            </nav>
+        </section>
     </header>
+
 
     {{-- END HEADER --}}
 
@@ -47,8 +61,7 @@
         {{-- LANDING PAGE --}}
         <section class="flex flex-col-reverse justify-center sm:flex-row p-6 items-center gap-4 mb-12">
             <article class="sm:w-1/2 ">
-                <h2
-                    class="text-6xl font-extrabold text-center sm:text-left sm:text-6xl text-orange-500">
+                <h2 class="text-6xl font-extrabold text-center sm:text-left sm:text-6xl text-orange-500">
                     Welcome to <span class="text-orange-900">bu</span>rger dungeon.
                 </h2>
                 <br>

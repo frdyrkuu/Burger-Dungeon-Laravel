@@ -28,3 +28,21 @@ function showUpload() {
     }
 
 }
+
+
+function hamburger() {
+    const ham = document.getElementById("mobile-menu");
+
+    if (ham.classList.contains("hidden")) {
+
+        ham.classList.remove("hidden");
+        ham.classList.add("flex");
+    }
+
+    else {
+
+        ham.classList.remove("flex");
+        ham.classList.add("hidden");
+    }
+}
+
