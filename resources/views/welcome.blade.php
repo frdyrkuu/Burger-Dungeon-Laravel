@@ -16,7 +16,7 @@
 
 </head>
 
-<body class="body antialiased">
+<body class="body antialiased font-['Poppins']">
 
     {{-- START HEADER --}}
 

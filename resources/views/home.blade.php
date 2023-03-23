@@ -201,7 +201,7 @@
                             <tbody class="divide-y divide-gray-200 text-sm">
                                 @foreach ($products as $item)
                                     <tr class="bg-white border-b">
-                                        <td scope="row" class="px-6 py-4 font-bold text-orange-500 whitespace-nowrap">
+                                        <td scope="row" class="px-6 py-4 font-bold text-orange-500">
                                             {{ $item->name }}
                                         </td>
                                         <td class="px-6 py-4">
