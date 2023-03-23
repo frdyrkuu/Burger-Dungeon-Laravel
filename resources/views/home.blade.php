@@ -237,7 +237,7 @@
         </div>
         {{-- END OF DASHBOARD TABLE --}}
         <div class="fixed bottom-0 right-0 mr-4 mb-4  animate-bounce">
-            <a href="#table" class="bg-orange-500 text-white font-bold rounded-full px-3 py-2 shadow ">
+            <a href="#table" class="bg-orange-500 text-white font-bold rounded-full px-3 py-2 shadow border-b-4 border-orange-700">
                 ↓
             </a>
         </div>
