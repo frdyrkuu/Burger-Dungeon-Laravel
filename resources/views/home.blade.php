@@ -98,7 +98,8 @@
             <div class="flex flex-col lg:flex-row lg:flex-wrap lg:-mx-2 mt-4 w-3/4 justify-center m-auto gap-2">
 
                 <div class="lg:w-1/3 lg:px-2 mb-4">
-                    <div class="bg-white shadow rounded-lg p-4 flex flex-row items-center transition duration-700 hover:scale-110">
+                    <div
+                        class="bg-white shadow rounded-lg p-4 flex flex-row items-center transition duration-700 hover:scale-110">
                         <div class="w-1/2 pr-4">
                             <h2 class="text-2xl text-orange-900 font-bold mb-2">Burger</h2>
                             <p class="text-gray-700 text-center"><span class="text-7xl text-orange-500">
@@ -112,10 +113,12 @@
                 </div>
 
                 <div class="lg:w-1/3 lg:px-2 mb-4">
-                    <div class="bg-white shadow rounded-lg p-4 flex flex-row items-center transition duration-700 hover:scale-110">
+                    <div
+                        class="bg-white shadow rounded-lg p-4 flex flex-row items-center transition duration-700 hover:scale-110">
                         <div class="w-1/2 pr-4">
                             <h2 class="text-2xl text-orange-900 font-bold mb-2">Fries</h2>
-                            <p class="text-gray-700 text-center"><span class="text-7xl text-orange-500">{{ $friesCount }}</span><br>In
+                            <p class="text-gray-700 text-center"><span
+                                    class="text-7xl text-orange-500">{{ $friesCount }}</span><br>In
                                 counts</p>
                         </div>
                         <div class="w-1/2">
@@ -125,10 +128,12 @@
                 </div>
 
                 <div class="lg:w-1/3 lg:px-2 mb-4">
-                    <div class="bg-white shadow rounded-lg p-4 flex flex-row items-center transition duration-700 hover:scale-110">
+                    <div
+                        class="bg-white shadow rounded-lg p-4 flex flex-row items-center transition duration-700 hover:scale-110">
                         <div class="w-1/2 pr-4">
                             <h2 class="text-2xl text-orange-900 font-bold mb-2">Barbeque</h2>
-                            <p class="text-gray-700 text-center"><span class="text-7xl text-orange-500">{{ $barbequeCount }}</span><br>In
+                            <p class="text-gray-700 text-center"><span
+                                    class="text-7xl text-orange-500">{{ $barbequeCount }}</span><br>In
                                 counts</p>
                         </div>
                         <div class="w-1/2">
@@ -138,10 +143,12 @@
                 </div>
 
                 <div class="lg:w-1/3 lg:px-2 mb-4">
-                    <div class="bg-white shadow rounded-lg p-4 flex flex-row items-center transition duration-700 hover:scale-110">
+                    <div
+                        class="bg-white shadow rounded-lg p-4 flex flex-row items-center transition duration-700 hover:scale-110">
                         <div class="w-1/2 pr-4">
                             <h2 class="text-2xl text-orange-900 font-bold mb-2">Drinks</h2>
-                            <p class="text-gray-700 text-center"><span class="text-7xl text-orange-500">{{ $drinksCount }}</span><br>In
+                            <p class="text-gray-700 text-center"><span
+                                    class="text-7xl text-orange-500">{{ $drinksCount }}</span><br>In
                                 counts</p>
 
                         </div>
@@ -152,14 +159,17 @@
                 </div>
 
                 <div class="lg:w-1/3 lg:px-2 mb-4">
-                    <div class="bg-white shadow rounded-lg p-4 flex flex-row items-center transition duration-700 hover:scale-110">
+                    <div
+                        class="bg-white shadow rounded-lg p-4 flex flex-row items-center transition duration-700 hover:scale-110">
                         <div class="w-1/2 pr-4">
                             <h2 class="text-2xl text-orange-900 font-bold mb-2">Ice Cream</h2>
-                            <p class="text-gray-700 text-center"><span class="text-7xl text-orange-500">{{ $icecreamCount }}</span><br>In
+                            <p class="text-gray-700 text-center"><span
+                                    class="text-7xl text-orange-500">{{ $icecreamCount }}</span><br>In
                                 counts</p>
                         </div>
                         <div class="w-1/2">
-                            <img src="/img/icecream-card.png" alt="Ice Cream" class="rounded-lg hover:animate-waving-hand">
+                            <img src="/img/icecream-card.png" alt="Ice Cream"
+                                class="rounded-lg hover:animate-waving-hand">
                         </div>
                     </div>
                 </div>
