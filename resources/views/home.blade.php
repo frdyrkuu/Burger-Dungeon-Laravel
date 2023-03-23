@@ -236,13 +236,13 @@
             </div>
         </div>
         {{-- END OF DASHBOARD TABLE --}}
-        <div class="fixed bottom-0 right-0 mr-4 mb-4  animate-bounce">
-            <a href="#table" class="bg-orange-500 text-white font-bold rounded-full px-3 py-2 shadow border-b-4 border-orange-700">
-                ↓
-            </a>
-        </div>
 
-
+        <button id="scroll-btn" onclick="scrollToBottom()"
+            class="fixed bottom-4 right-4 rounded-full bg-orange-500 text-white w-15 h-15 flex items-center justify-center mb-10 animate-bounce">
+            <svg viewBox="0 0 24 24" width="48px" height="48px">
+                <path fill="currentColor" d="M7,10L12,15L17,10H7Z" />
+            </svg>
+        </button>
 
     </div>
 @endsection

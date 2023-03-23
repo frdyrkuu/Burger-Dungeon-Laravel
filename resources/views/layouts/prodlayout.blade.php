@@ -49,21 +49,13 @@
         @yield('content')
 
         <button id="scroll-btn" onclick="scrollToBottom()"
-            class="fixed bottom-4 right-4 rounded-full bg-orange-500 text-white w-10 h-10 flex items-center justify-center mb-10 animate-bounce">
-            <svg viewBox="0 0 24 24" width="24px" height="24px">
+            class="fixed bottom-4 right-4 rounded-full bg-orange-500 text-white w-15 h-15 flex items-center justify-center mb-10 animate-bounce">
+            <svg viewBox="0 0 24 24" width="48px" height="48px">
                 <path fill="currentColor" d="M7,10L12,15L17,10H7Z" />
             </svg>
         </button>
 
-        <script>
-            function scrollToBottom() {
-                window.scrollTo({
-                    top: document.body.scrollHeight,
-                    behavior: "smooth"
-                });
-            }
-        </script>
-    </main>
+       </main>
 
     {{-- START FOOTER --}}
     <footer class="p-4 bg-orange-900 rounded-lg shadow md:px-6 md:py-8">
@@ -99,6 +91,7 @@
         </span>
     </footer>
     {{-- END FOOTER --}}
+    <script src="/display.js"></script>
 </body>
 
 </html>
