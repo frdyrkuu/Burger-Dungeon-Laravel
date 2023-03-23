@@ -30,7 +30,7 @@
 
 <body class="font-['Poppins']">
 
-    <header class="bg-orange-900 text-white sticky top-0 z-50 font-['Poppins'] dark:bg-white dark:text-orange-900">
+    <header class="bg-orange-900 text-white sticky top-0 z-50 font-['Poppins']">
         <section class="max-w-7xl mx-auto p-4 flex justify-between items-center">
             <h1 class="text-4xl font-bold font-['Poppins']">
                 <a href="/"><span class="text-orange-500">bu</span>rger dungeon.</a>

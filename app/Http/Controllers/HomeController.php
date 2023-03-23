@@ -6,6 +6,7 @@ use App\Models\Products;
 use Illuminate\Http\Request;
 
 
+
 class HomeController extends Controller
 {
     /**
@@ -27,6 +28,14 @@ class HomeController extends Controller
     {
         $data = Products::all();
 
-        return view('home', ['products' => $data]);
+        $burgerCount = Products::where('category', 'burger')->count();
+        $friesCount = Products::where('category', 'fries')->count();
+        $barbequeCount = Products::where('category', 'barbeque')->count();
+        $drinksCount = Products::where('category', 'drinks')->count();
+        $icecreamCount = Products::where('category', 'icecream')->count();
+
+
+        return view('home', ['products' => $data, 'burgerCount' => $burgerCount, 'friesCount' => $friesCount,
+        'barbequeCount' => $barbequeCount, 'drinksCount' => $drinksCount, 'icecreamCount' => $icecreamCount]);
     }
 }
