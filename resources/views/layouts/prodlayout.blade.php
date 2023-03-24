@@ -71,7 +71,6 @@
                 <path fill="currentColor" d="M7,10L12,15L17,10H7Z" />
             </svg>
         </button>
-
     </main>
 
     {{-- START FOOTER --}}
