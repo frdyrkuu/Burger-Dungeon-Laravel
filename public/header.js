@@ -1,4 +1,5 @@
 hideScroll();
+
 function hideScroll() {
     // Get the header element
     const header = document.getElementById("head");
@@ -19,3 +20,4 @@ function hideScroll() {
         prevScrollPos = currentScrollPos;
     }
 }
+

@@ -8,16 +8,18 @@
         <div class="flex flex-col lg:flex-row lg:flex-wrap lg:-mx-2 justify-center m-auto">
 
             @foreach ($burger as $item)
-                <div class="lg:w-1/3 lg:px-2 mb-4">
+                <div class="lg:w-1/3 lg:px-2 mb-4 text-center">
                     <div
-                        class="bg-white shadow rounded-lg p-4 flex flex-row items-center transition duration-700 hover:scale-105 sm:hover:scale-110">
-                        <div class="w-1/2 pr-4">
-                            <h2 class="text-2xl text-orange-900 font-bold mb-2">{{ $item->name }}</h2>
-                            <p class="text-gray-700"><span class="text-sm text-black">{{ $item->description }}</p>
-                        </div>
-                        <div class="w-1/2">
+                        class="rounded-lg p-4 flex flex-col items-center transition duration-700 hover:scale-105 sm:hover:scale-110">
+                        <div class="w-full h-40">
                             <img src="{{ asset('uploads/images/' . $item->images) }}" alt="Ice Cream"
-                                class="rounded-lg hover:animate-waving-hand">
+                                class="w-full h-full object-contain rounded-lg hover:animate-waving-hand">
+                        </div>
+                        <div class="w-full mt-4 mb-2">
+                            <h2 class="text-2xl text-orange-900 font-bold">{{ $item->name }}</h2>
+                        </div>
+                        <div class="w-full">
+                            <p class="text-gray-700 text-sm">{{ $item->description }}</p>
                         </div>
                     </div>
                 </div>
@@ -35,17 +37,18 @@
         <div class="flex flex-col lg:flex-row lg:flex-wrap lg:-mx-2 justify-center m-auto">
 
             @foreach ($fries as $item)
-                <div class="lg:w-1/3 lg:px-2 mb-4">
+                <div class="lg:w-1/3 lg:px-2 mb-4 text-center">
                     <div
-                        class="bg-white shadow rounded-lg p-4 flex flex-row items-center transition duration-700 hover:scale-105 sm:hover:scale-110 ">
-                        <div class="w-1/2 pr-4">
-                            <h2 class="text-2xl text-orange-900 font-bold mb-2">{{ $item->name }}</h2>
-                            <p class="text-gray-700"><span class="text-sm text-black">{{ $item->description }}
-                            </p>
-                        </div>
-                        <div class="w-1/2">
+                        class="rounded-lg p-4 flex flex-col items-center transition duration-700 hover:scale-105 sm:hover:scale-110">
+                        <div class="w-full h-40">
                             <img src="{{ asset('uploads/images/' . $item->images) }}" alt="Ice Cream"
-                                class="rounded-lg hover:animate-waving-hand">
+                                class="w-full h-full object-contain rounded-lg hover:animate-waving-hand">
+                        </div>
+                        <div class="w-full mt-4 mb-2">
+                            <h2 class="text-2xl text-orange-900 font-bold">{{ $item->name }}</h2>
+                        </div>
+                        <div class="w-full">
+                            <p class="text-gray-700 text-sm">{{ $item->description }}</p>
                         </div>
                     </div>
                 </div>
@@ -60,17 +63,18 @@
         <div class="flex flex-col lg:flex-row lg:flex-wrap lg:-mx-2 justify-center m-auto">
 
             @foreach ($barbeque as $item)
-                <div class="lg:w-1/3 lg:px-2 mb-4">
+                <div class="lg:w-1/3 lg:px-2 mb-4 text-center">
                     <div
-                        class="bg-white shadow rounded-lg p-4 flex flex-row items-center transition duration-700  hover:scale-105 sm:hover:scale-110">
-                        <div class="w-1/2 pr-4">
-                            <h2 class="text-2xl text-orange-900 font-bold mb-2">{{ $item->name }}</h2>
-                            <p class="text-gray-700"><span class="text-sm text-black">{{ $item->description }}
-                            </p>
-                        </div>
-                        <div class="w-1/2">
+                        class="rounded-lg p-4 flex flex-col items-center transition duration-700 hover:scale-105 sm:hover:scale-110">
+                        <div class="w-full h-40">
                             <img src="{{ asset('uploads/images/' . $item->images) }}" alt="Ice Cream"
-                                class="rounded-lg hover:animate-waving-hand">
+                                class="w-full h-full object-contain rounded-lg hover:animate-waving-hand">
+                        </div>
+                        <div class="w-full mt-4 mb-2">
+                            <h2 class="text-2xl text-orange-900 font-bold">{{ $item->name }}</h2>
+                        </div>
+                        <div class="w-full">
+                            <p class="text-gray-700 text-sm">{{ $item->description }}</p>
                         </div>
                     </div>
                 </div>
@@ -84,16 +88,18 @@
         <div class="flex flex-col lg:flex-row lg:flex-wrap lg:-mx-2 justify-center m-auto">
 
             @foreach ($drinks as $item)
-                <div class="lg:w-1/3 lg:px-2 mb-4">
+                <div class="lg:w-1/3 lg:px-2 mb-4 text-center">
                     <div
-                        class="bg-white shadow rounded-lg p-4 flex flex-row items-center transition duration-700  hover:scale-105 sm:hover:scale-110">
-                        <div class="w-1/2 pr-4">
-                            <h2 class="text-2xl text-orange-900 font-bold mb-2">{{ $item->name }}</h2>
-                            <p class="text-gray-700"><span class="text-sm ">{{ $item->description }}</p>
-                        </div>
-                        <div class="w-1/2">
+                        class="rounded-lg p-4 flex flex-col items-center transition duration-700 hover:scale-105 sm:hover:scale-110">
+                        <div class="w-full h-40">
                             <img src="{{ asset('uploads/images/' . $item->images) }}" alt="Ice Cream"
-                                class="rounded-lg hover:animate-waving-hand">
+                                class="w-full h-full object-contain rounded-lg hover:animate-waving-hand">
+                        </div>
+                        <div class="w-full mt-4 mb-2">
+                            <h2 class="text-2xl text-orange-900 font-bold">{{ $item->name }}</h2>
+                        </div>
+                        <div class="w-full">
+                            <p class="text-gray-700 text-sm">{{ $item->description }}</p>
                         </div>
                     </div>
                 </div>
@@ -108,16 +114,18 @@
         <div class="flex flex-col lg:flex-row lg:flex-wrap lg:-mx-2 justify-center m-auto">
 
             @foreach ($icecream as $item)
-                <div class="lg:w-1/3 lg:px-2 mb-4">
+                <div class="lg:w-1/3 lg:px-2 mb-4 text-center">
                     <div
-                        class="bg-white shadow rounded-lg p-4 flex flex-row items-center transition duration-700  hover:scale-105 sm:hover:scale-110">
-                        <div class="w-1/2 pr-4">
-                            <h2 class="text-2xl text-orange-900 font-bold mb-2">{{ $item->name }}</h2>
-                            <p class="text-gray-700"><span class="text-sm">{{ $item->description }}</p>
-                        </div>
-                        <div class="w-1/2">
+                        class="rounded-lg p-4 flex flex-col items-center transition duration-700 hover:scale-105 sm:hover:scale-110">
+                        <div class="w-full h-40">
                             <img src="{{ asset('uploads/images/' . $item->images) }}" alt="Ice Cream"
-                                class="rounded-lg hover:animate-waving-hand">
+                                class="w-full h-full object-contain rounded-lg hover:animate-waving-hand">
+                        </div>
+                        <div class="w-full mt-4 mb-2">
+                            <h2 class="text-2xl text-orange-900 font-bold">{{ $item->name }}</h2>
+                        </div>
+                        <div class="w-full">
+                            <p class="text-gray-700 text-sm">{{ $item->description }}</p>
                         </div>
                     </div>
                 </div>

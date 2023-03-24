@@ -44,6 +44,8 @@ function hamburger() {
         ham.classList.remove("flex");
         ham.classList.add("hidden");
     }
+
+
 }
 
 function scrollToBottom() {

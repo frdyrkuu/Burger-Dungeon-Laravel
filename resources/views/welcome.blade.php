@@ -14,40 +14,49 @@
     @vite('resources/css/app.css')
     <link rel="stylesheet" href="/header.css">
     <script src="/display.js"></script>
+    <script src="/header.js"></script>
+
 </head>
 
 <body class="body antialiased font-['Poppins']">
 
     {{-- START HEADER --}}
-
-    <header class="bg-orange-900 text-white sticky top-0 z-50 font-['Poppins'] shadow-2xl">
+    <header class="bg-orange-900 text-white sticky top-0 z-50 font-['Poppins'] shadow-2xl" id="head1">
         <section class="max-w-7xl mx-auto p-4 flex justify-between items-center">
             <h1 class="text-4xl font-bold font-['Poppins']  transition duration-500 hover:scale-110">
                 <a href="/"><span class="text-orange-500">bu</span>rger dungeon.</a>
             </h1>
             <div>
-                <button onclick="hamburger()" class="text-3xl md:hidden cursor-pointer">
+                <button onclick="hamburger()" class="text-3xl lg:hidden cursor-pointer">
                     ☰
                 </button>
-                <nav class="hidden md:block space-x-8 text-xl font-semibold" aria-label="main">
+                <nav class="hidden lg:block space-x-8 text-xl font-semibold" aria-label="main">
                     <a href="#food" class="transition duration-500">Foods</a>
                     <a href="#contacts" class="transition duration-500">Contacts</a>
                     <a href="#about" class="transition duration-500">About Us</a>
-                    <a href="/productlist"
-                        class="bg-orange-500 p-2 rounded-2xl shadow-xl transition duration-500 hover:scale-110 px-4 border-b-4 border-orange-700">&#128722
-                        Our Products</a>
+                    <a href="/productlist"> <button
+                            class="bg-orange-500 p-2 rounded-2xl shadow-xl transition duration-500 hover:scale-110 px-4 border-b-4 border-orange-700">&#128722
+                            Our Products</button></a>
                 </nav>
             </div>
         </section>
-        <section id="mobile-menu"
-            class="hidden absolute bg-white w-full text-5xl flex-col justify-content-center shadow-2xl transition duration-500 animate-reveal-x">
-            <nav class="flex flex-col min-h-screen items-center py-8 text-xl text-orange-900" aria-label="mobile">
-                <a href="#food" class="w-full text-center py-3">Foods</a>
-                <a href="#contacts" class="w-full text-center py-6 hover:opacity-90">Contacts</a>
-                <a href="#about" class="w-full text-center py-6 hover:opacity-90">About Us</a>
-                <a href="/productlist" class="w-full text-center py-6 hover:opacity-90">Our Products</a>
-            </nav>
-        </section>
+        <div class="relative">
+            <section id="mobile-menu"
+                class="hidden right-0 absolute bg-white w-1/2 xl:hidden text-5xl flex-col shadow-2xl transition duration-500 animate-reveal-x">
+                <nav class="flex flex-col min-h-screen items-left py-8 text-xl text-orange-900" aria-label="mobile">
+                    <button class="text-right text-2xl px-6" onclick="hamburger()">&times;</button>
+                    <a href="#food" class="w-full text-center py-3">Foods</a>
+                    <hr class="h-1">
+                    <a href="#contacts" class="w-full text-center py-6 hover:opacity-90">Contacts</a>
+                    <hr class="h-1">
+                    <a href="#about" class="w-full text-center py-6 hover:opacity-90">About Us</a>
+                    <hr class="h-1">
+                    <a href="/productlist" class="w-full text-center py-6 hover:opacity-90">Our
+                        Products</a>
+                    <hr class="h-1">
+                </nav>
+            </section>
+        </div>
     </header>
 
 
@@ -149,7 +158,8 @@
                     <p class="font-['Poppins'] text-gray-600 text-lg mt-3 mx-2 text-center">
                         Vegetarian burger fit for royalty with avocado, garlic mayo, and veggies.
                     </p>
-                    <p class="font-['Poppins'] text-gray-600 text-lg mt-3 mx-2 text-center hidden" id="product-desc-3">
+                    <p class="font-['Poppins'] text-gray-600 text-lg mt-3 mx-2 text-center hidden"
+                        id="product-desc-3">
                         At the
                         heart of the Veggie à la Queen burger is a mouth-watering vegetable patty, made with a flavorful
                         blend of fresh vegetables and herbs. The patty is then topped with creamy avocado, crisp
