@@ -25,7 +25,7 @@
                     ☰
                 </button>
                 <nav class="hidden sm:block space-x-8 text-xl font-semibold" aria-label="main">
-                    <a href="/#food" class="w-full text-center py-3">Foods</a>
+                    <a href="/" class="w-full text-center py-3">Home</a>
                     <a href="/#contacts" class="w-full text-center py-6 hover:opacity-90">Contacts</a>
                     <a href="/#about" class="w-full text-center py-6 hover:opacity-90">About Us</a>
                     <a href="/productlist" class="w-full text-center py-6 hover:opacity-90">Our Products</a>
