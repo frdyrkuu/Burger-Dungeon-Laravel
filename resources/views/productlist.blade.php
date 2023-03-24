@@ -1,8 +1,10 @@
 @extends('layouts.prodlayout')
 @section('content')
     <div id="burger">
+
         <h1 class="text-3xl sm:text-5xl font-bold text-orange-500 my-5 p-2"><span class="text-orange-900">Bu</span>rger
             Section</h1>
+
         <div class="flex flex-col lg:flex-row lg:flex-wrap lg:-mx-2 justify-center m-auto">
 
             @foreach ($burger as $item)
@@ -23,9 +25,13 @@
         </div>
     </div>
 
-    <div>
+
+
+    <div class="" id="fries">
+
         <h1 class="text-3xl sm:text-5xl font-bold text-orange-500 my-5 p-2"><span class="text-orange-900">Fr</span>ies
             Section</h1>
+
         <div class="flex flex-col lg:flex-row lg:flex-wrap lg:-mx-2 justify-center m-auto">
 
             @foreach ($fries as $item)
@@ -118,5 +124,4 @@
             @endforeach
         </div>
     </div>
-
 @endsection

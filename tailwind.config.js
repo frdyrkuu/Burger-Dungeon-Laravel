@@ -32,6 +32,16 @@ module.exports = {
                     },
                 },
 
+                'reveal-x': {
+                    '0%': {
+                        transform: 'translateX(100%)'
+                    },
+                    '100%': {
+                        transform: 'translateX(0%)'
+                    },
+                },
+
+
                 openmenu: {
                     '0%' : {transform: 'scaleY(0)'},
                     '80%' : {transform: 'scaleY(1.2)'},
@@ -42,6 +52,7 @@ module.exports = {
                 'waving-hand': 'wave 2s linear infinite',
                 floating: 'floating 3s linear infinite',
                 reveal: 'reveal 1s',
+                'reveal-x': 'reveal-x 1s',
                 'open-menu' : 'openmenu 0.5s ease-in-out forwards',
             },
 
