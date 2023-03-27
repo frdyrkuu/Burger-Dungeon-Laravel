@@ -50,7 +50,7 @@
             <div class="container mx-auto max-w-7xl">
                 <h1 class="text-xl font-bold text-orange-900 ml-5 mt-5"><span class="text-orange-500">Our</span> Menu</h1>
                 <div class="overflow-x-auto mt-2">
-                    <nav class="flex px-2 text-center text-orange-900 text-lg font-light mb-5">
+                    <nav class="flex px-2 text-center text-orange-900 text-lg font-light mb-5 whitespace-nowrap gap-3">
                         <a href="#burger" class="px-4 py-2">Burger</a>
                         <a href="#fries" class="px-4 py-2">Fries</a>
                         <a href="#barbeque" class="px-4 py-2">Barbeque</a>
