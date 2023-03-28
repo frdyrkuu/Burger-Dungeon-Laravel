@@ -26,6 +26,7 @@ class HomeController extends Controller
      */
     public function index()
     {
+
         $data = Products::all();
 
         $burgerCount = Products::where('category', 'burger')->count();
@@ -35,7 +36,9 @@ class HomeController extends Controller
         $icecreamCount = Products::where('category', 'icecream')->count();
 
 
-        return view('home', ['products' => $data, 'burgerCount' => $burgerCount, 'friesCount' => $friesCount,
-        'barbequeCount' => $barbequeCount, 'drinksCount' => $drinksCount, 'icecreamCount' => $icecreamCount]);
+        return view('home', [
+            'products' => $data, 'burgerCount' => $burgerCount, 'friesCount' => $friesCount,
+            'barbequeCount' => $barbequeCount, 'drinksCount' => $drinksCount, 'icecreamCount' => $icecreamCount
+        ]);
     }
 }

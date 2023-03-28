@@ -1,3 +1,5 @@
+// const { data } = require("autoprefixer");
+
 var loadFile = function (event) {
     var reader = new FileReader();
     reader.onload = function () {
@@ -7,26 +9,70 @@ var loadFile = function (event) {
     reader.readAsDataURL(event.target.files[0]);
 };
 
-function showUpload() {
-    const div = document.getElementById("showUpload");
-    const table = document.getElementById("showTable");
-    const btnShow = document.getElementById("btnShow");
 
-    if (div.classList.contains("hidden")) {
-        div.classList.remove("hidden");
-        div.classList.add("grid");
 
-        btnShow.textContent = "Show Table";
+function showDashboard() {
 
-        table.classList.add("hidden");
+    const uploadPhoto = document.getElementById("showUpload");
+    const dashBoard = document.getElementById("showTable");
+    const dataTable = document.getElementById("dataTable");
+
+    if (dashBoard.classList.contains("flex")) {
+
+        uploadPhoto.classList.remove("flex");
+        dataTable.classList.remove("flex");
+
+        uploadPhoto.classList.add("hidden");
+        dataTable.classList.add("hidden");
     } else {
-        div.classList.remove("grid");
-        div.classList.add("hidden");
+        dashBoard.classList.remove("hidden");
+        dashBoard.classList.add("flex");
 
-        btnShow.textContent = "+ Add Product";
-        table.classList.remove("hidden");
+        uploadPhoto.classList.remove("flex");
+        uploadPhoto.classList.add("hidden");
+
+
+        dataTable.classList.remove("flex");
+        dataTable.classList.add("hidden");
     }
+}
 
+function showUpload() {
+
+    const uploadPhoto = document.getElementById("showUpload");
+    const dashBoard = document.getElementById("showTable");
+    const dataTable = document.getElementById("dataTable");
+
+    if (uploadPhoto.classList.contains("hidden")) {
+
+        uploadPhoto.classList.remove("hidden");
+        uploadPhoto.classList.add("grid");
+
+        dashBoard.classList.remove("flex");
+        dashBoard.classList.add("hidden");
+
+        dataTable.classList.remove("flex");
+        dataTable.classList.add("hidden");
+    }
+}
+
+function showDataTable() {
+
+    const uploadPhoto = document.getElementById("showUpload");
+    const dashBoard = document.getElementById("showTable");
+    const dataTable = document.getElementById("dataTable");
+
+    if (dataTable.classList.contains("hidden")) {
+
+        dataTable.classList.remove("hidden");
+        dataTable.classList.add("grid");
+
+        dashBoard.classList.remove("flex");
+        dashBoard.classList.add("hidden");
+
+        uploadPhoto.classList.remove("flex");
+        uploadPhoto.classList.add("hidden");
+    }
 }
 
 
@@ -53,4 +99,57 @@ function scrollToBottom() {
         top: document.body.scrollHeight,
         behavior: "smooth"
     });
+}
+
+function hideCard() {
+    const dashboardCard = document.getElementById("dashboardCard");
+
+    if (dashboardCard.classList.contains("flex")) {
+        dashboardCard.classList.remove("flex");
+        dashboardCard.classList.add("hidden");
+    }
+}
+
+function revealSHeader() {
+    const SHeader = document.getElementById("SHeader");
+
+    if (SHeader.classList.contains("hidden")) {
+        SHeader.classList.remove("hidden");
+        SHeader.classList.add("flex");
+    } else {
+        SHeader.classList.remove("flex");
+        SHeader.classList.add("hidden");
+    }
+}
+
+function expandHeader() {
+    const SHeader = document.getElementById("SHeader");
+    const dd = document.getElementById("dd");
+    const uu = document.getElementById("uu");
+    const tt = document.getElementById("tt");
+
+    const arrow = document.getElementById("arrow");
+
+    if (SHeader.classList.contains("w-20")) {
+        SHeader.classList.remove("w-20");
+        SHeader.classList.add("w-64");
+
+        dd.classList.remove("hidden");
+        uu.classList.remove("hidden");
+        tt.classList.remove("hidden");
+
+        arrow.classList.remove("fa-arrow-right");
+        arrow.classList.add("fa-arrow-left");
+    } else {
+        SHeader.classList.add("w-20");
+        SHeader.classList.remove("w-64");
+
+        dd.classList.add("hidden");
+        uu.classList.add("hidden");
+        tt.classList.add("hidden");
+
+
+        arrow.classList.add("fa-arrow-right");
+        arrow.classList.remove("fa-arrow-left");
+    }
 }

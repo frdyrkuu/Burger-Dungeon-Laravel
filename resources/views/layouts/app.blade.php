@@ -16,10 +16,11 @@
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="/header.css">
     <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"
+        integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="/display.js"></script>
-
     @viteReactRefresh
     @viteReactRefresh
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
@@ -29,6 +30,10 @@
 </head>
 
 <body class="font-['Poppins']">
+
+    <script>
+        hideCard();
+    </script>
 
     <header class="bg-orange-900 text-white sticky top-0 z-50 font-['Poppins']">
         <section class="max-w-7xl mx-auto p-4 flex justify-between items-center">
@@ -72,6 +77,7 @@
                                     </a>
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                                         @csrf
+
                                     </form>
                                 </div>
                             </li>

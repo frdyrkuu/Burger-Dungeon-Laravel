@@ -68,16 +68,16 @@
         {{-- LANDING PAGE --}}
         <section class="flex flex-col-reverse justify-center sm:flex-row p-6 items-center gap-4 mb-12">
             <article class="sm:w-1/2 ">
-                <h2 class="text-6xl font-extrabold text-center sm:text-left sm:text-6xl text-orange-500">
+                <h2 class="text-6xl font-extrabold text-center sm:text-left sm:text-6xl text-orange-500 animate-reveal-x">
                     Welcome to <span class="text-orange-900">bu</span>rger dungeon.
                 </h2>
                 <br>
-                <h2 class="text-4xl font-semibold sm:text-4xl text-orange-500 text-center sm:text-left">
+                <h2 class="text-4xl font-semibold sm:text-4xl text-orange-500 text-center sm:text-left animate-reveal">
                     Hungry? Try <span class="text-yellow-800 font-normal">Our Burgers Made
                     </span>
                     with Half Pound Patties.
                 </h2>
-                <h3 class="font-['Poppins'] text-1xl font-thin sm:text-2xl text-gray-600 text-center sm:text-left">
+                <h3 class="font-['Poppins'] text-1xl font-thin sm:text-2xl text-gray-600 text-center sm:text-left animate-reveal-x">
                     <br>
                     “Tasty, delicious, and has me craving more on the first bite.”
                     to “Juicy, mouthwatering, tasty, and everything

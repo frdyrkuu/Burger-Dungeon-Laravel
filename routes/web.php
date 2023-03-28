@@ -2,7 +2,9 @@
 
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PhotoController;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ProductlistController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,11 +27,14 @@ Route::get('/productlist', function () {
 
 Route::get('/home', [PhotoController::class, 'index'])->name('home');
 
-Route::get('/productlist', [App\Http\Controllers\ProductlistController::class, 'List']);
+Route::get('/productlist', [ProductlistController::class, 'List']);
+
+Auth::routes();
 
 Route::get('/upload', [PhotoController::class, 'create'])->name('home');
 Route::post('/upload', [PhotoController::class, 'store'])->name('home');
-Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', [HomeController::class, 'index'])->name('home');
+Route::get('/home', [HomeController::class, 'index'])->name('home');
+
+route::get('delete/{id}',[ProductlistController::class, 'delete'])->middleware('auth');

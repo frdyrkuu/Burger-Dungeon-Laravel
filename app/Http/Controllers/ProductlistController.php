@@ -2,12 +2,14 @@
 
 namespace App\Http\Controllers;
 
+
 use App\Models\Products;
 use Illuminate\Http\Request;
 
+
+
 class ProductlistController extends Controller
 {
-    //
     public function List()
     {
         $burger = Products::where('category', 'burger')->get();
@@ -16,7 +18,16 @@ class ProductlistController extends Controller
         $drinks = Products::where('category', 'drinks')->get();
         $icecream = Products::where('category', 'icecream')->get();
 
-        return view('productlist', ['burger' => $burger, 'fries' => $fries, 'barbeque' => $barbeque, 'drinks' => $drinks,
-        'icecream' => $icecream]);
+        return view('productlist', [
+            'burger' => $burger, 'fries' => $fries, 'barbeque' => $barbeque, 'drinks' => $drinks,
+            'icecream' => $icecream
+        ]);
+    }
+
+    public function delete($id)
+    {
+        $data = Products::find($id);
+        $data->delete();
+        return redirect('/home');
     }
 }
