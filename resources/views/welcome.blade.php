@@ -222,7 +222,7 @@
                 <div class="flex flex-wrap -m-3">
                     <div class="w-full md:w-1/3 p-3">
                         <div
-                            class="p-11 h-full text-center bg-white bg-opacity-90 border border-blueGray-100 rounded-xl shadow-11xl">
+                            class="p-11 h-full text-center">
                             <div class="mb-6 relative mx-auto w-16 h-16 bg-orange-500 rounded-full">
                                 <img src="img/facebook.png" alt="" class="m-auto">
                             </div>
@@ -232,7 +232,7 @@
                     </div>
                     <div class="w-full md:w-1/3 p-3">
                         <div
-                            class="p-11 h-full text-center bg-white bg-opacity-90 border border-blueGray-100 rounded-xl shadow-11xl">
+                            class="p-11 h-full text-center">
                             <div
                                 class="mb-6 relative mx-auto w-16 h-16 bg-white border border-blueGray-200 rounded-full">
                                 <img src="img/whatsapp.png" alt="">
@@ -244,7 +244,7 @@
                     </div>
                     <div class="w-full md:w-1/3 p-3">
                         <div
-                            class="p-11 h-full text-center bg-white bg-opacity-90 border border-blueGray-100 rounded-xl shadow-11xl">
+                            class="p-11 h-full text-center">
                             <div
                                 class="mb-6 relative mx-auto w-16 h-16 bg-white border border-blueGray-200 rounded-full">
                                 <img src="img/location-pin.png" alt="">

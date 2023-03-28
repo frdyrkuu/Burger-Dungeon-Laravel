@@ -45,7 +45,7 @@
 
             <div class="row justify-content-center">
                 <div class="col-md-8">
-                    <div class="flex card bg-yellow-100 fixed z-10 w-1/2 opacity-90" id="dashboardCard">
+                    <div class="flex card bg-yellow-100 fixed z-10 w-full -ml-9 md:ml-0 md:w-1/2 opacity-90" id="dashboardCard">
                         <div class="card-header">{{ __('Dashboard') }}</div>
 
                         <div class="card-body">
