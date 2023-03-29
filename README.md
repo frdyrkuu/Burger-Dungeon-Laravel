@@ -13,14 +13,12 @@
 
 ## Features
 
-Burger Dungeon is a web application built with Laravel Framework. It allows users to order burgers online and have them delivered to their doorstep.
+Burger Dungeon is a web application built with Laravel Framework. It allows users to view products online.
 
-Features
-User authentication (registration, login, logout)
-Menu with different types of burgers
-Cart system to add items and place orders
-Admin dashboard to manage orders and menu items
-Email notifications for order confirmation and status updates
+<p>User authentication (registration, login, logout)</p>
+<p>Menu with different types of burgers</p>
+<p>Admin dashboard to manage products in menu</p>
+<p>Create, Read, Update, and Delete products from the database</p>
 
 ## Installation
 
