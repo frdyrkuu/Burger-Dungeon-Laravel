@@ -37,4 +37,8 @@ Route::post('/upload', [PhotoController::class, 'store'])->name('home');
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 
-route::get('delete/{id}',[ProductlistController::class, 'delete'])->middleware('auth');
+route::get('/delete/{id}',[HomeController::class, 'delete'])->middleware('auth');
+
+route::get('/editproduct/{id}',[HomeController::class, 'edit'])->middleware('auth');
+
+route::put('/update-data/{id}',[HomeController::class, 'update'])->middleware('auth');

@@ -15,7 +15,9 @@
 </head>
 
 <body class="font-['Poppins']">
-    <header class="bg-white text-orange-900 sticky top-0 z-50 font-['Poppins']" id="head">
+
+
+    <header class="bg-orange-900 text-white sticky top-0 z-50 font-['Poppins']" id="head">
         <section class="max-w-7xl mx-auto p-4 flex justify-between items-center">
             <h1 class="text-4xl font-bold font-['Poppins']  transition duration-500 hover:scale-110">
                 <a href="/productlist"><span class="text-orange-500">bu</span>rger dungeon.</a>
@@ -26,36 +28,30 @@
                 </button>
                 <nav class="hidden sm:block space-x-8 text-xl font-semibold" aria-label="main">
                     <a href="/" class="w-full text-center py-3">Home</a>
-                    <a href="/#contacts" class="w-full text-center py-6 hover:opacity-90">Contacts</a>
-                    <a href="/#about" class="w-full text-center py-6 hover:opacity-90">About Us</a>
-                    <a href="/productlist" class="w-full text-center py-6 hover:opacity-90">Our Products</a>
+                    <a href="/#food" class="w-full text-center py-3">Dashboard</a>
+                    <a href="/#contacts" class="w-full text-center py-6 hover:opacity-90">Upload</a>
+                    <a href="/#about" class="w-full text-center py-6 hover:opacity-90">Table</a>
                 </nav>
             </div>
         </section>
 
         <section id="mobile-menu"
             class="hidden absolute bg-white w-full text-5xl flex-col justify-content-center shadow-2xl transition duration-500 animate-reveal-x">
-            <nav class="flex flex-col min-h-screen items-center py-8 text-xl" aria-label="mobile">
-                <a href="/#food" class="w-full text-center py-3">Foods</a>
-                <a href="/#contacts" class="w-full text-center py-6 hover:opacity-90">Contacts</a>
-                <a href="/#about" class="w-full text-center py-6 hover:opacity-90">About Us</a>
-                <a href="/productlist" class="w-full text-center py-6 hover:opacity-90">Our Products</a>
+            <nav class="flex flex-col min-h-screen items-center py-8 text-xl text-orange-900" aria-label="mobile">
+                <a href="/productlist" class="w-full text-center py-6 hover:opacity-90">Home</a>
+                <a href="/#food" class="w-full text-center py-3">Dashboard</a>
+                <a href="/#contacts" class="w-full text-center py-6 hover:opacity-90">Upload</a>
+                <a href="/#about" class="w-full text-center py-6 hover:opacity-90">Table</a>
             </nav>
         </section>
         </section>
     </header>
 
 
-    <main class="max-w-7xl mx-auto ">
+    <main class="py-4">
         @yield('content')
 
-
     </main>
-
-
-
-
-
 
 
     {{-- START FOOTER --}}
@@ -94,6 +90,8 @@
     {{-- END FOOTER --}}
     <script src="/display.js"></script>
     <script src="/header.js"></script>
+
+
 </body>
 
 </html>

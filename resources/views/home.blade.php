@@ -3,7 +3,9 @@
 @section('content')
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="/display.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"
+        integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     @vite('resources/css/app.css')
 
@@ -19,18 +21,18 @@
                 <button class="py-10" onclick="expandHeader()"><i class="fa fa-arrow-right" id="arrow"></i></button>
                 {{-- ARROW --}}
 
-                <button onclick="showDashboard()" class="px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-gray-900"><i
-                        class="fa fa-dashboard"></i>
+                <button onclick="showDashboard()" title="🖥️ Monitor your products"
+                    class="px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-gray-900"><i class="fa fa-dashboard"></i>
                     <span class="ml-3 hidden text-lg" id="dd">Dashboard</span>
                 </button>
 
-                <button onclick="showUpload()" class="px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-gray-900"><i
-                        class="fa fa-plus"></i>
+                <button onclick="showUpload()" title="📷 Upload you product here"
+                    class="px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-gray-900"><i class="fa fa-plus"></i>
                     <span class="ml-3 hidden text-lg" id="uu">Upload Product</span>
                 </button> {{-- UPLOAD --}}
 
-                <button onclick="showDataTable()" class="px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-gray-900"><i
-                        class="fa fa-table"></i>
+                <button onclick="showDataTable()" title="📋 Clasify your products"
+                    class="px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-gray-900"><i class="fa fa-table"></i>
                     <span class="ml-3 hidden text-lg" id="tt">Table</span>
                 </button> {{-- TABLE --}}
             </nav>
@@ -45,7 +47,8 @@
 
             <div class="row justify-content-center">
                 <div class="col-md-8">
-                    <div class="flex card bg-yellow-100 fixed z-10 w-full -ml-9 md:ml-0 md:w-1/2 opacity-90" id="dashboardCard">
+                    <div class="flex card bg-yellow-100 fixed z-10 w-full -ml-9 md:ml-0 md:w-1/2 opacity-90"
+                        id="dashboardCard">
                         <div class="card-header">{{ __('Dashboard') }}</div>
 
                         <div class="card-body">
@@ -181,7 +184,7 @@
                                     counts</p>
                             </div>
                             <div class="w-1/2">
-                                <img src="/img/chicken-card.png" alt="Ice Cream"
+                                <img src="/img/barbeque-icon.png" alt="Ice Cream"
                                     class="rounded-lg hover:animate-waving-hand">
                             </div>
                         </div>
@@ -233,7 +236,7 @@
                 <div class="border p-2 bg-gray-100 mt-4 rounded-lg w-full sm:w-3/4 m-auto" id="table">Table</div>
 
                 <div class="card-body w-full sm:w-3/4 m-auto animate-reveal">
-                    <div class="h-96 overflow-y-auto relative">
+                    <div class="overflow-y-auto h-screen">
                         <div class="overflow-x-auto shadow-2xl">
                             <table class="table-auto min-w-full divide-y divide-gray-200  rounded-2xl">
                                 <thead>
@@ -254,7 +257,7 @@
                                             class="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                                             ID</th>
                                         <th
-                                            class="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                            class="px-6 py-3 bg-gray-50 text-xs font-medium text-gray-500 uppercase tracking-wider text-center">
                                             Actions</th>
 
                                     </tr>
@@ -283,7 +286,7 @@
                                             </td>
                                             <td class="px-6 py-4 whitespace-nowrap">
 
-                                                <a href="" class="text-indigo-500">Edit</a>
+                                                <a href="{{ '/editproduct/' . $item['id'] }}" class="text-indigo-500 px-3">Update</a>
                                                 <a onclick="confirmation(event)" href=""
                                                     class="text-red-500">Delete</a>
                                                 {{-- {{"delete/".$item['id']}} --}}
@@ -316,11 +319,15 @@
                 dangerMode: true,
             }).then((willDelete) => {
                 if (willDelete) {
-                    // Navigate to the new URL
-                    window.location.href = '{{ 'delete/' . $item['id'] }}';
+
+                    window.location.href = '{{ '/delete/' . $item['id'] }}';
                 } else {
                     // Handle the cancel button
-                    swal("Your item is safe!");
+
+                    swal({
+                        icon: 'success',
+                        text: "Your product is safe!",
+                    });
                 }
             });
         }

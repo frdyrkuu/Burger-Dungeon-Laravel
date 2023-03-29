@@ -16,9 +16,7 @@
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="/header.css">
     <!-- Scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"
-        integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="/display.js"></script>
     @viteReactRefresh
@@ -30,7 +28,7 @@
 </head>
 
 <body class="font-['Poppins']">
-
+    @include('sweetalert::alert')
     <script>
         hideCard();
     </script>
@@ -105,9 +103,6 @@
     <main class="py-4">
         @yield('content')
     </main>
-    </div>
-
 </body>
-
 
 </html>

@@ -24,10 +24,5 @@ class ProductlistController extends Controller
         ]);
     }
 
-    public function delete($id)
-    {
-        $data = Products::find($id);
-        $data->delete();
-        return redirect('/home');
-    }
+
 }

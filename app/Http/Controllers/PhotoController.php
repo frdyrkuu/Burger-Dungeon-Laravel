@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use RealRashid\SweetAlert\Facades\Alert;
 use App\Models\Products;
 use Illuminate\Http\Request;
-
 use Illuminate\Support\Facades\DB;
 
 class PhotoController extends Controller
@@ -33,6 +33,8 @@ class PhotoController extends Controller
         $photo->description = $description;
         $photo->category = $category;
         $photo->images = $final_image_name;
+
+        Alert::success('Product has been saved!', 'You successfully added a product');
 
         $photo->save();
         return redirect()->back();
