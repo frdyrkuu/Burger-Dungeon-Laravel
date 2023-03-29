@@ -1,4 +1,4 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://i.ibb.co/gd9NLQ8/lgoo.png" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
 <a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
@@ -7,7 +7,7 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-# Burger Dungeon - Laravel Framework
+# Burger Dungeon - Laravel Framework and TailwindCSS
 
 <p>Burger Dungeon is a web application built with Laravel Framework. It allows users to order burgers online and have them delivered to their doorstep. This README file provides instructions on how to install and set up the application on your local machine.</p>
 
@@ -15,10 +15,10 @@
 
 Burger Dungeon is a web application built with Laravel Framework. It allows users to view products online.
 
-<p>User authentication (registration, login, logout)</p>
-<p>Menu with different types of burgers</p>
-<p>Admin dashboard to manage products in menu</p>
-<p>Create, Read, Update, and Delete products from the database</p>
+<p>	:octocat: User authentication (registration, login, logout)</p>
+<p>	:octocat: Menu with different types of burgers</p>
+<p>	:octocat: Admin dashboard to manage products in menu</p>
+<p>	:octocat: Create, Read, Update, and Delete products from the database</p>
 
 ## Installation
 
@@ -37,4 +37,15 @@ Burger Dungeon is a web application built with Laravel Framework. It allows user
 
 ### 5. Migrate the database tables:
 <p>php artisan migrate</p>
+
+### 6. Seed the database with sample data:
+<p>php artisan db:seed</p>
+
+### 7. Start the local development server:
+<p>php artisan serve</p>
+
+
+
+## Usage
+<p>Open your web browser and navigate to http://localhost:8000 to view the application. You can register as a new user, or log in as an existing user to view the menu, add items to your cart, and place an order.</p>
 
