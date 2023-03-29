@@ -17,5 +17,5 @@
 <p>git clone https://github.com/your-username/burger-dungeon.git</p>
 
 <p>2. Install the dependencies using Composer:</p>
-<p>cd burger-dungeon</p> <br>
+<p>cd burger-dungeon</p>
 <p>cd composer install</p>
