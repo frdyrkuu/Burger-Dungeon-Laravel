@@ -7,4 +7,7 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## About Burger Dungeon
+## Burger Dungeon - Laravel Framework
+
+<p>Burger Dungeon is a web application built with Laravel Framework. It allows users to order burgers online and have them delivered to their doorstep. This README file provides instructions on how to install and set up the application on your local machine.</p>
+
