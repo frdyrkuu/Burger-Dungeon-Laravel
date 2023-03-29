@@ -11,6 +11,17 @@
 
 <p>Burger Dungeon is a web application built with Laravel Framework. It allows users to order burgers online and have them delivered to their doorstep. This README file provides instructions on how to install and set up the application on your local machine.</p>
 
+## Features
+
+Burger Dungeon is a web application built with Laravel Framework. It allows users to order burgers online and have them delivered to their doorstep.
+
+Features
+User authentication (registration, login, logout)
+Menu with different types of burgers
+Cart system to add items and place orders
+Admin dashboard to manage orders and menu items
+Email notifications for order confirmation and status updates
+
 ## Installation
 
 ## 1. Clone the repository to your local machine:
