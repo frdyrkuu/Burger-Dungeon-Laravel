@@ -28,3 +28,13 @@ Burger Dungeon is a web application built with Laravel Framework. It allows user
 ### 2. Install the dependencies using Composer:
 <p>cd burger-dungeon</p>
 <p>cd composer install</p>
+
+### 3. Rename the .env.example file to .env and fill in the necessary configuration settings:
+<p>cp .env.example .env</p>
+
+### 4. Generate a new application key:
+<p>php artisan key:generate</p>
+
+### 5. Migrate the database tables:
+<p>php artisan migrate</p>
+
