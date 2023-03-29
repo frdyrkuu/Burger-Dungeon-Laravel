@@ -15,3 +15,7 @@
 
 <p>1. Clone the repository to your local machine:</p>
 <p>git clone https://github.com/your-username/burger-dungeon.git</p>
+
+<p>2. Install the dependencies using Composer:</p>
+<p>cd burger-dungeon</p> <br>
+<p>cd composer install</p>
