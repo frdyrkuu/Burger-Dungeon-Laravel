@@ -1,4 +1,4 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://i.ibb.co/gd9NLQ8/lgoo.png" width="400" alt="Laravel Logo"></a></p>
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://i.ibb.co/nrvc7b2/sdad.png" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
 <a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
@@ -48,4 +48,3 @@ Burger Dungeon is a web application built with Laravel Framework. It allows user
 
 ## Usage
 <p>Open your web browser and navigate to http://localhost:8000 to view the application. You can register as a new user, or log in as an existing user to view the menu, add items to your cart, and place an order.</p>
-
