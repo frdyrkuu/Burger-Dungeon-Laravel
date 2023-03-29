@@ -7,15 +7,15 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## Burger Dungeon - Laravel Framework
+# Burger Dungeon - Laravel Framework
 
 <p>Burger Dungeon is a web application built with Laravel Framework. It allows users to order burgers online and have them delivered to their doorstep. This README file provides instructions on how to install and set up the application on your local machine.</p>
 
 ## Installation
 
-# 1. Clone the repository to your local machine:
+## 1. Clone the repository to your local machine:
 <p>git clone https://github.com/your-username/burger-dungeon.git</p>
 
-# 2. Install the dependencies using Composer:
+## 2. Install the dependencies using Composer:
 <p>cd burger-dungeon</p>
 <p>cd composer install</p>
