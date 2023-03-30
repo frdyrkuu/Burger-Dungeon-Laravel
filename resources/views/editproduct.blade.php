@@ -13,7 +13,7 @@
                     {{ csrf_field() }}
                     @method('PUT')
 
-                    <input type="file" onchange="loadFile(event)" name="newImage">
+                    <input type="file" onchange="loadFile(event)" accept="image/png" name="newImage">
                     <br><br>
                     <label for="newTitle">Title</label>
                     <input type="text" name="newTitle"
@@ -38,9 +38,12 @@
             <div class="flex items-center justify-end mt-5">
                 <input type="submit"
                     class="px-4 py-2 bg-orange-500 text-white font-semibold rounded hover:bg-orange-700 mr-2"></input>
-                <button class="px-4 py-2 bg-gray-500 text-white font-semibold rounded hover:bg-gray-400">Cancel</button>
+                </form>
+                <a href="/home"> <button
+                        class="px-4 py-2 bg-gray-500 text-white font-semibold rounded hover:bg-gray-700 mr-2">Cancel</button></a>
             </div>
-            </form>
+
+
         </div>
     </div>
 @endsection

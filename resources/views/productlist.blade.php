@@ -9,19 +9,21 @@
 
             @foreach ($burger as $item)
                 <div class="lg:w-1/3 lg:px-2 mb-4 text-center">
-                    <div
-                        class="rounded-lg p-4 flex flex-col items-center transition duration-700 hover:scale-105 sm:hover:scale-110">
-                        <div class="w-full h-40">
-                            <img src="{{ asset('uploads/images/' . $item->images) }}" alt="Ice Cream"
-                                class="w-full h-full object-contain rounded-lg hover:animate-waving-hand">
+                    <a href="/preview/{{ $item->id }}" title="🍔 Choose me!">
+                        <div
+                            class="rounded-lg p-4 flex flex-col items-center transition duration-700 hover:scale-105 sm:hover:scale-110">
+                            <div class="w-full h-40">
+                                <img src="{{ asset('uploads/images/' . $item->images) }}" alt="{{ $item->name }}"
+                                    class="w-full h-full object-contain rounded-lg hover:animate-waving-hand">
+                            </div>
+                            <div class="w-full mt-4 mb-2">
+                                <h2 class="text-2xl text-orange-900 font-bold">{{ $item->name }}</h2>
+                            </div>
+                            <div class="w-full">
+                                <p class="text-gray-700 text-sm truncate">{{ $item->description }}</p>
+                            </div>
                         </div>
-                        <div class="w-full mt-4 mb-2">
-                            <h2 class="text-2xl text-orange-900 font-bold">{{ $item->name }}</h2>
-                        </div>
-                        <div class="w-full">
-                            <p class="text-gray-700 text-sm">{{ $item->description }}</p>
-                        </div>
-                    </div>
+                    </a>
                 </div>
             @endforeach
         </div>
@@ -38,19 +40,21 @@
 
             @foreach ($fries as $item)
                 <div class="lg:w-1/3 lg:px-2 mb-4 text-center">
-                    <div
-                        class="rounded-lg p-4 flex flex-col items-center transition duration-700 hover:scale-105 sm:hover:scale-110">
-                        <div class="w-full h-40">
-                            <img src="{{ asset('uploads/images/' . $item->images) }}" alt="Ice Cream"
-                                class="w-full h-full object-contain rounded-lg hover:animate-waving-hand">
+                    <a href="/preview/{{ $item->id }}" title="🍟 Choose me!">
+                        <div
+                            class="rounded-lg p-4 flex flex-col items-center transition duration-700 hover:scale-105 sm:hover:scale-110">
+                            <div class="w-full h-40">
+                                <img src="{{ asset('uploads/images/' . $item->images) }}" alt="{{ $item->name }}"
+                                    class="w-full h-full object-contain rounded-lg hover:animate-waving-hand">
+                            </div>
+                            <div class="w-full mt-4 mb-2">
+                                <h2 class="text-2xl text-orange-900 font-bold">{{ $item->name }}</h2>
+                            </div>
+                            <div class="w-full">
+                                <p class="text-gray-700 text-sm truncate">{{ $item->description }}</p>
+                            </div>
                         </div>
-                        <div class="w-full mt-4 mb-2">
-                            <h2 class="text-2xl text-orange-900 font-bold">{{ $item->name }}</h2>
-                        </div>
-                        <div class="w-full">
-                            <p class="text-gray-700 text-sm">{{ $item->description }}</p>
-                        </div>
-                    </div>
+                    </a>
                 </div>
             @endforeach
         </div>
@@ -64,19 +68,21 @@
 
             @foreach ($barbeque as $item)
                 <div class="lg:w-1/3 lg:px-2 mb-4 text-center">
-                    <div
-                        class="rounded-lg p-4 flex flex-col items-center transition duration-700 hover:scale-105 sm:hover:scale-110">
-                        <div class="w-full h-40">
-                            <img src="{{ asset('uploads/images/' . $item->images) }}" alt="Ice Cream"
-                                class="w-full h-full object-contain rounded-lg hover:animate-waving-hand">
+                    <a href="/preview/{{ $item->id }}" title="🍖 Choose me!">
+                        <div
+                            class="rounded-lg p-4 flex flex-col items-center transition duration-700 hover:scale-105 sm:hover:scale-110">
+                            <div class="w-full h-40">
+                                <img src="{{ asset('uploads/images/' . $item->images) }}" alt="{{ $item->name }}"
+                                    class="w-full h-full object-contain rounded-lg hover:animate-waving-hand">
+                            </div>
+                            <div class="w-full mt-4 mb-2">
+                                <h2 class="text-2xl text-orange-900 font-bold">{{ $item->name }}</h2>
+                            </div>
+                            <div class="w-full">
+                                <p class="text-gray-700 text-sm truncate">{{ $item->description }}</p>
+                            </div>
                         </div>
-                        <div class="w-full mt-4 mb-2">
-                            <h2 class="text-2xl text-orange-900 font-bold">{{ $item->name }}</h2>
-                        </div>
-                        <div class="w-full">
-                            <p class="text-gray-700 text-sm">{{ $item->description }}</p>
-                        </div>
-                    </div>
+                    </a>
                 </div>
             @endforeach
         </div>
@@ -89,19 +95,21 @@
 
             @foreach ($drinks as $item)
                 <div class="lg:w-1/3 lg:px-2 mb-4 text-center">
-                    <div
-                        class="rounded-lg p-4 flex flex-col items-center transition duration-700 hover:scale-105 sm:hover:scale-110">
-                        <div class="w-full h-40">
-                            <img src="{{ asset('uploads/images/' . $item->images) }}" alt="Ice Cream"
-                                class="w-full h-full object-contain rounded-lg hover:animate-waving-hand">
+                    <a href="/preview/{{ $item->id }}" title="🍹Choose me!">
+                        <div
+                            class="rounded-lg p-4 flex flex-col items-center transition duration-700 hover:scale-105 sm:hover:scale-110">
+                            <div class="w-full h-40">
+                                <img src="{{ asset('uploads/images/' . $item->images) }}" alt="{{ $item->name }}"
+                                    class="w-full h-full object-contain rounded-lg hover:animate-waving-hand">
+                            </div>
+                            <div class="w-full mt-4 mb-2">
+                                <h2 class="text-2xl text-orange-900 font-bold">{{ $item->name }}</h2>
+                            </div>
+                            <div class="w-full">
+                                <p class="text-gray-700 text-sm truncate">{{ $item->description }}</p>
+                            </div>
                         </div>
-                        <div class="w-full mt-4 mb-2">
-                            <h2 class="text-2xl text-orange-900 font-bold">{{ $item->name }}</h2>
-                        </div>
-                        <div class="w-full">
-                            <p class="text-gray-700 text-sm">{{ $item->description }}</p>
-                        </div>
-                    </div>
+                    </a>
                 </div>
             @endforeach
         </div>
@@ -115,19 +123,21 @@
 
             @foreach ($icecream as $item)
                 <div class="lg:w-1/3 lg:px-2 mb-4 text-center">
-                    <div
-                        class="rounded-lg p-4 flex flex-col items-center transition duration-700 hover:scale-105 sm:hover:scale-110">
-                        <div class="w-full h-40">
-                            <img src="{{ asset('uploads/images/' . $item->images) }}" alt="Ice Cream"
-                                class="w-full h-full object-contain rounded-lg hover:animate-waving-hand">
+                    <a href="/preview/{{ $item->id }}" title="🍨 Choose me!">
+                        <div
+                            class="rounded-lg p-4 flex flex-col items-center transition duration-700 hover:scale-105 sm:hover:scale-110">
+                            <div class="w-full h-40">
+                                <img src="{{ asset('uploads/images/' . $item->images) }}" alt="{{ $item->name }}"
+                                    class="w-full h-full object-contain rounded-lg hover:animate-waving-hand">
+                            </div>
+                            <div class="w-full mt-4 mb-2">
+                                <h2 class="text-2xl text-orange-900 font-bold">{{ $item->name }}</h2>
+                            </div>
+                            <div class="w-full">
+                                <p class="text-gray-700 text-sm truncate">{{ $item->description }}</p>
+                            </div>
                         </div>
-                        <div class="w-full mt-4 mb-2">
-                            <h2 class="text-2xl text-orange-900 font-bold">{{ $item->name }}</h2>
-                        </div>
-                        <div class="w-full">
-                            <p class="text-gray-700 text-sm">{{ $item->description }}</p>
-                        </div>
-                    </div>
+                    </a>
                 </div>
             @endforeach
         </div>

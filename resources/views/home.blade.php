@@ -47,7 +47,7 @@
 
             <div class="row justify-content-center">
                 <div class="col-md-8">
-                    <div class="flex card bg-yellow-100 fixed z-10 w-full -ml-9 md:ml-0 md:w-1/2 opacity-90"
+                    {{-- <div class="flex card bg-yellow-100 fixed z-10 w-full -ml-9 md:ml-0 md:w-1/2 opacity-90"
                         id="dashboardCard">
                         <div class="card-header">{{ __('Dashboard') }}</div>
 
@@ -73,7 +73,7 @@
                                 dashboardCard.classList.add("hidden");
                             }, 2000);
                         </script>
-                    </div>
+                    </div> --}}
 
                     {{-- SECTION FOR UPLOAD PRODUCTS --}}
                     {{-- grid --}}
@@ -274,7 +274,7 @@
                                                         class="" alt="{{ $item->name }}">
                                                 </div>
                                             </td>
-                                            <td class="px-6 py-4">
+                                            <td class="px-6 py-4 w-1/2">
                                                 {{ $item->description }}
                                             </td>
                                             <td class="px-6 py-4">
@@ -286,7 +286,8 @@
                                             </td>
                                             <td class="px-6 py-4 whitespace-nowrap">
 
-                                                <a href="{{ '/editproduct/' . $item['id'] }}" class="text-indigo-500 px-3">Update</a>
+                                                <a href="{{ '/editproduct/' . $item['id'] }}"
+                                                    class="text-indigo-500 px-3">Update</a>
                                                 <a onclick="confirmation(event)" href=""
                                                     class="text-red-500">Delete</a>
                                                 {{-- {{"delete/".$item['id']}} --}}

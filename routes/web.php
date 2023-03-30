@@ -42,3 +42,5 @@ route::get('/delete/{id}',[HomeController::class, 'delete'])->middleware('auth')
 route::get('/editproduct/{id}',[HomeController::class, 'edit'])->middleware('auth');
 
 route::put('/update-data/{id}',[HomeController::class, 'update'])->middleware('auth');
+
+Route::get('/preview/{id}',[ProductlistController:: class, 'preview']);

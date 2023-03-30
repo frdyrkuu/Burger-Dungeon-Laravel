@@ -24,5 +24,12 @@ class ProductlistController extends Controller
         ]);
     }
 
+    public function preview($id){
+
+        $product = Products::find($id);
+
+        return view('preview', ['product' => $product]);
+    }
+
 
 }
