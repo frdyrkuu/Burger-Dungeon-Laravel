@@ -5,7 +5,8 @@
 <p>Burger Dungeon is a web application built with Laravel Framework. It allows users to view menus online. This README file provides instructions on how to install and set up the application on your local machine.</p>
 
 ## Welcome Hooman!
-<p align="center"><a href="https://github.com/frdyrkuu"><img src="https://gist.githubusercontent.com/brudnak/aba00c9a1c92d226f68e8ad8ba1e0a40/raw/e1e4a92f6072d15014f19aa8903d24a1ac0c41a4/nyan-cat.gif"></a></p>
+<p align="center"><a href="https://github.com/frdyrkuu"><img src="https://gist.githubusercontent.com/brudnak/aba00c9a1c92d226f68e8ad8ba1e0a40/raw/e1e4a92f6072d15014f19aa8903d24a1ac0c41a4/nyan-cat.gif">Click Me!</a></p>
+
 
 ## Features
 
