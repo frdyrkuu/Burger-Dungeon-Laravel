@@ -21,10 +21,10 @@
                 <a href="/productlist"><span class="text-orange-500">bu</span>rger dungeon.</a>
             </h1>
             <div>
-                <button onclick="hamburger()" class="text-3xl sm:hidden focus:outline-none">
+                <button onclick="hamburger()" class="text-3xl lg:hidden focus:outline-none">
                     ☰
                 </button>
-                <nav class="hidden sm:block space-x-8 text-xl font-semibold" aria-label="main">
+                <nav class="hidden lg:block space-x-8 text-xl font-semibold" aria-label="main">
                     <a href="/" class="w-full text-center py-3">Home</a>
                     <a href="/#contacts" class="w-full text-center py-6 hover:opacity-90">Contacts</a>
                     <a href="/#about" class="w-full text-center py-6 hover:opacity-90">About Us</a>
