@@ -1,13 +1,14 @@
 @extends('layouts.prodlayout')
+<hr id="burger" class="mx-auto bg-transparent w-1/2 h-1">
 @section('content')
-    <div id="burger">
-
+    <div>
         <h1 class="text-3xl sm:text-5xl font-bold text-orange-500 my-5 p-2"><span class="text-orange-900">Bu</span>rger
             Section</h1>
 
         <div class="flex flex-col lg:flex-row lg:flex-wrap lg:-mx-2 justify-center m-auto">
 
             @foreach ($burger as $item)
+
                 <div class="lg:w-1/3 lg:px-2 mb-4 text-center">
                     <a href="/preview/{{ $item->id }}" title="🍔 Choose me!">
                         <div
@@ -25,13 +26,15 @@
                         </div>
                     </a>
                 </div>
+
+
             @endforeach
         </div>
     </div>
 
+    <hr id="fries" class="mx-auto bg-orange-900 w-1/2 h-1 my-32">
 
-
-    <div class="" id="fries">
+    <div class="">
 
         <h1 class="text-3xl sm:text-5xl font-bold text-orange-500 my-5 p-2"><span class="text-orange-900">Fr</span>ies
             Section</h1>
@@ -60,7 +63,9 @@
         </div>
     </div>
 
-    <div id="barbeque">
+    <hr id="barbeque" class="mx-auto bg-orange-900 w-1/2 h-1 my-32">
+
+    <div>
         <h1 class="text-3xl sm:text-5xl font-bold text-orange-500 my-5 p-2"><span class="text-orange-900">Ba</span>rbeque
             Section</h1>
 
@@ -88,7 +93,9 @@
         </div>
     </div>
 
-    <div id="drinks">
+    <hr id="drinks" class="mx-auto bg-orange-900 w-1/2 h-1 my-32">
+
+    <div>
         <h1 class="text-3xl sm:text-5xl font-bold text-orange-500 my-5 p-2"><span class="text-orange-900">Dr</span>inks
             Section</h1>
         <div class="flex flex-col lg:flex-row lg:flex-wrap lg:-mx-2 justify-center m-auto">
@@ -115,7 +122,9 @@
         </div>
     </div>
 
-    <div id="icecream">
+    <hr id="icecream" class="mx-auto bg-orange-900 w-1/2 h-1 my-32">
+
+    <div>
         <h1 class="text-3xl sm:text-5xl font-bold text-orange-500 my-5 p-2"><span class="text-orange-900">Ic</span>e Cream
             Section</h1>
 
@@ -142,4 +151,6 @@
             @endforeach
         </div>
     </div>
+
+    <hr id="drinks" class="mx-auto bg-transparent w-1/2 h-1 my-10 border-transparent">
 @endsection

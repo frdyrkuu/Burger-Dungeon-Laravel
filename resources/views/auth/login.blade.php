@@ -2,7 +2,7 @@
 @vite('resources/css/app.css')
 @section('content')
     <link rel="stylesheet" href="/header.css">
-    <div class="container w-full sm:w-2/3">
+    <div class="container w-full lg:w-full">
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">

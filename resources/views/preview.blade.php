@@ -1,11 +1,20 @@
 @extends('layouts.prev')
 @section('content')
-    <div class="container animate-reveal m-auto">
-        <div class="flex flex-col items-center justify-center">
-            <img src="{{ asset('uploads/images/' . $product->images) }}" alt="Image" class="sm:mt-5 w-full lg:w-1/3 h-72 object-contain mb-4 animate-reveal-x animate-floating">
-            <h1 class="text-5xl font-bold mb-2 text-orange-900 animate-reveal-x text-center mt-10 w-full md:w-1/2">{{$product->name}}</h1>
-            <p class="text-gray-900 text-justify sm:w-3/4 p-4 animate-reveal text-xl">{{$product->description}}</p>
+    <section class="flex flex-col-reverse justify-center lg:flex-row p-6 items-center gap-4 mb-12 -mt-42">
+        <article class="lg:w-3/4 w-full">
+            <h1 class="text-4xl font-extrabold text-center lg:text-left lg:text-6xl text-orange-500 animate-reveal w-full">
+                {{ $product->name }}
+            </h1>
+            <br>
+            <h2
+                class="font-['Poppins'] text-1xl font-thin sm:text-2xl text-gray-800 text-center lg:text-left animate-reveal-x">
+                {{ $product->description }}
+            </h2>
+            <br>
+        </article>
+        <div class="w-11/12 lg:w-5/4 animate-reveal">
+            <img class="animate-floating w-5/4 sm:w-full  h-3/4 m-auto sm:m-none" src="{{ asset('uploads/images/' . $product->images) }}"
+                alt="{{ $product->name }}">
         </div>
-    </div>
+    </section>
 @endsection
-

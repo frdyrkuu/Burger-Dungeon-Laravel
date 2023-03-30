@@ -27,7 +27,7 @@ class ProductlistController extends Controller
     public function preview($id){
 
         $product = Products::find($id);
-
+        if(!$product) abort(404);
         return view('preview', ['product' => $product]);
     }
 

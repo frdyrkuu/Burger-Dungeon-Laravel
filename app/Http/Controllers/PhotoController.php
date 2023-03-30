@@ -19,6 +19,8 @@ class PhotoController extends Controller
     public function store(Request $request)
     {
 
+        if(!$request->hasFile('image')) abort(500);
+
         $name = $request->file('image')->getClientOriginalName();
         $new_image_name = uniqid("IMG_", false);
         $final_image_name = $new_image_name . "." . $name;
@@ -34,11 +36,10 @@ class PhotoController extends Controller
         $photo->category = $category;
         $photo->images = $final_image_name;
 
+
         Alert::success('Product has been saved!', 'You successfully added a product');
 
         $photo->save();
         return redirect()->back();
     }
-
-
 }

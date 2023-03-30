@@ -74,13 +74,13 @@
         <section class="flex flex-col-reverse justify-center sm:flex-row p-6 items-center gap-4 mb-12 text-center">
             <article class="sm:w-1/2 ">
                 <h2 class="text-6xl font-extrabold text-center sm:text-6xl text-orange-500 animate-reveal-x">
-                    <span class="text-orange-900">404 </span>| Page not Found
+                    <span class="text-orange-900">500 </span>| Something went wrong
                 </h2>
                 <br>
                 <h2 class="text-4xl font-semibold sm:text-4xl text-orange-500 text-center animate-reveal">
                     <span class="text-yellow-800 font-normal">Unable
                     </span>
-                    to find the page
+                    to post data
                 </h2>
                 <br>
             </article>
