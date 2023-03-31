@@ -60,10 +60,8 @@
     </header>
 
     {{-- END HEADER --}}
-    <div class="w-11/12 sm:w-5/4">
-        <img class="animate-floating w-11/12 h-11/12 m-auto sm:m-none object-contain"
-            src="https://gist.githubusercontent.com/brudnak/aba00c9a1c92d226f68e8ad8ba1e0a40/raw/e1e4a92f6072d15014f19aa8903d24a1ac0c41a4/nyan-cat.gif"
-            alt="burger">
+    <div class="w-32 h-32 overflow-hidden rounded-full m-auto mt-20 bg-gray-200">
+        <img class="animate-floating w-full h-full object-cover m-auto" src="/img/nyan-cat-cropped.gif" alt="burger">
     </div>
     {{-- START MAIN --}}
     <main class="max-w-full mx-auto">
