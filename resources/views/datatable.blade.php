@@ -4,7 +4,7 @@
     <div id="dataTable" class="">
         {{-- START OF DASHBOARD TABLE --}}
 
-        <h1 class="text-orange-900 font-bold text-4xl px-20">
+        <h1 class="text-orange-900 font-bold text-4xl text-center lg:px-20">
             <span class="text-orange-500">Da</span>ta Table
         </h1>
         <div class="border p-2 bg-gray-100 mt-4 rounded-lg w-full sm:w-3/4 m-auto" id="table">Table</div>
@@ -72,7 +72,8 @@
 
                 </div>
                 <div class="flex flex-col justify-center items-center mt-4">
-                    {{ $products->links() }} <a href="/home" class="mt-2 underline text-blue-500">Back to home</a>
+                    {{ $products->links() }}
+                    <a href="/home" class="mt-2 underline text-blue-500">Back to home</a>
                 </div>
             </div>
         </div>

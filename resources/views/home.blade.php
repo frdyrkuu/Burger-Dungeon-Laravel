@@ -192,7 +192,6 @@
                         </div>
                     </div>
                 </div>
-
             </div>
             {{-- END OF DASHBOARD TABLE --}}
         </div>

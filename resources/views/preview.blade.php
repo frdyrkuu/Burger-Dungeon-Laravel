@@ -6,15 +6,14 @@
                 {{ $product->name }}
             </h1>
             <br>
-            <h2
-                class="font-['Poppins'] text-1xl font-thin sm:text-2xl text-gray-800 text-center lg:text-left animate-reveal-x">
+            <h2 class="font-['Poppins'] text-1xl sm:text-xl text-gray-800 text-center lg:text-left animate-reveal-x">
                 {{ $product->description }}
             </h2>
             <br>
         </article>
         <div class="w-11/12 lg:w-5/4 animate-reveal">
-            <img class="animate-floating w-5/4 sm:w-full  h-3/4 m-auto sm:m-none" src="{{ asset('uploads/images/' . $product->images) }}"
-                alt="{{ $product->name }}">
+            <img class="animate-floating w-5/4 sm:w-full  h-3/4 m-auto sm:m-none"
+                src="{{ asset('uploads/images/' . $product->images) }}" alt="{{ $product->name }}">
         </div>
     </section>
 @endsection

@@ -38,13 +38,13 @@
                         </div>
                         <div class="w-full mt-4 mb-2">
                             {{-- NAME LOADER --}}
-                            <div class="bg-gray-400 rounded-2xl w-64 h-7 m-auto"></div>
+                            <div class="bg-gray-200 rounded-2xl w-64 h-7 m-auto"></div>
 
                         </div>
                         <div class="w-full">
                             {{-- DESCRIPTION LOADER --}}
-                            <div class="bg-gray-400 rounded-2xl w-50 h-5 my-2"></div>
-                            <div class="bg-gray-400 rounded-2xl w-64 h-5"></div>
+                            <div class="bg-gray-200 rounded-2xl w-50 h-5 my-2"></div>
+                            <div class="bg-gray-200 rounded-2xl w-64 h-5"></div>
                         </div>
                     </div>
                 </div>
@@ -93,13 +93,13 @@
                         </div>
                         <div class="w-full mt-4 mb-2">
                             {{-- NAME LOADER --}}
-                            <div class="bg-gray-400 rounded-2xl w-64 h-7 m-auto"></div>
+                            <div class="bg-gray-200 rounded-2xl w-64 h-7 m-auto"></div>
 
                         </div>
                         <div class="w-full">
                             {{-- DESCRIPTION LOADER --}}
-                            <div class="bg-gray-400 rounded-2xl w-50 h-5 my-2"></div>
-                            <div class="bg-gray-400 rounded-2xl w-64 h-5"></div>
+                            <div class="bg-gray-200 rounded-2xl w-50 h-5 my-2"></div>
+                            <div class="bg-gray-200 rounded-2xl w-64 h-5"></div>
                         </div>
                     </div>
                 </div>
@@ -147,13 +147,13 @@
                         </div>
                         <div class="w-full mt-4 mb-2">
                             {{-- NAME LOADER --}}
-                            <div class="bg-gray-400 rounded-2xl w-64 h-7 m-auto"></div>
+                            <div class="bg-gray-200 rounded-2xl w-64 h-7 m-auto"></div>
 
                         </div>
                         <div class="w-full">
                             {{-- DESCRIPTION LOADER --}}
-                            <div class="bg-gray-400 rounded-2xl w-50 h-5 my-2"></div>
-                            <div class="bg-gray-400 rounded-2xl w-64 h-5"></div>
+                            <div class="bg-gray-200 rounded-2xl w-50 h-5 my-2"></div>
+                            <div class="bg-gray-200 rounded-2xl w-64 h-5"></div>
                         </div>
                     </div>
                 </div>
@@ -200,13 +200,13 @@
                         </div>
                         <div class="w-full mt-4 mb-2">
                             {{-- NAME LOADER --}}
-                            <div class="bg-gray-400 rounded-2xl w-64 h-7 m-auto"></div>
+                            <div class="bg-gray-200 rounded-2xl w-64 h-7 m-auto"></div>
 
                         </div>
                         <div class="w-full">
                             {{-- DESCRIPTION LOADER --}}
-                            <div class="bg-gray-400 rounded-2xl w-50 h-5 my-2"></div>
-                            <div class="bg-gray-400 rounded-2xl w-64 h-5"></div>
+                            <div class="bg-gray-200 rounded-2xl w-50 h-5 my-2"></div>
+                            <div class="bg-gray-200 rounded-2xl w-64 h-5"></div>
                         </div>
                     </div>
                 </div>
@@ -254,13 +254,13 @@
                         </div>
                         <div class="w-full mt-4 mb-2">
                             {{-- NAME LOADER --}}
-                            <div class="bg-gray-400 rounded-2xl w-64 h-7 m-auto"></div>
+                            <div class="bg-gray-200 rounded-2xl w-64 h-7 m-auto"></div>
 
                         </div>
                         <div class="w-full">
                             {{-- DESCRIPTION LOADER --}}
-                            <div class="bg-gray-400 rounded-2xl w-50 h-5 my-2"></div>
-                            <div class="bg-gray-400 rounded-2xl w-64 h-5"></div>
+                            <div class="bg-gray-200 rounded-2xl w-50 h-5 my-2"></div>
+                            <div class="bg-gray-200 rounded-2xl w-64 h-5"></div>
                         </div>
                     </div>
                 </div>
