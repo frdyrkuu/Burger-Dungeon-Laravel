@@ -39,7 +39,7 @@
                 <input type="submit"
                     class="px-4 py-2 bg-orange-500 text-white font-semibold rounded hover:bg-orange-700 mr-2"></input>
                 </form>
-                <a href="/home"> <button
+                <a href="/home/dashboard"> <button
                         class="px-4 py-2 bg-gray-500 text-white font-semibold rounded hover:bg-gray-700 mr-2">Cancel</button></a>
             </div>
 

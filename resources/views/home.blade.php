@@ -31,10 +31,10 @@
                     <span class="ml-3 hidden text-lg" id="uu">Upload Product</span>
                 </button> {{-- UPLOAD --}}
 
-                <button onclick="showDataTable()" title="📋 Clasify your products"
+                <a href="/home/dashboard" title="📋 Clasify your products"
                     class="px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-gray-900"><i class="fa fa-table"></i>
                     <span class="ml-3 hidden text-lg" id="tt">Table</span>
-                </button> {{-- TABLE --}}
+                </a> {{-- TABLE --}}
             </nav>
         </div>
 
@@ -43,37 +43,8 @@
         </div>
         <div class="flex-1 flex flex-col p-4">
             <!-- Content goes here -->
-
-
             <div class="row justify-content-center">
                 <div class="col-md-8">
-                    {{-- <div class="flex card bg-yellow-100 fixed z-10 w-full -ml-9 md:ml-0 md:w-1/2 opacity-90"
-                        id="dashboardCard">
-                        <div class="card-header">{{ __('Dashboard') }}</div>
-
-                        <div class="card-body">
-                            @if (session('status'))
-                                <div class="alert alert-success" role="alert">
-                                    {{ session('status') }}
-                                </div>
-                            @endif
-                            {{ __('You are logged in!') }}
-                            <button onclick="hideCard()"
-                                class="p-3 py-2 rounded-2xl text-gray-700  font-bold  ml-14 sm:float-right float-right text-4xl">&times;
-                            </button>
-                            <br>
-                            <div class="mt-2">
-                                <h1 class="font-bold">Welcome to Administrative Dashboard</h1>
-                                <h2>You can Edit and Add your products here.</h2>
-                            </div>
-                        </div>
-                        <script>
-                            setTimeout(() => {
-                                dashboardCard.classList.remove("flex");
-                                dashboardCard.classList.add("hidden");
-                            }, 2000);
-                        </script>
-                    </div> --}}
 
                     {{-- SECTION FOR UPLOAD PRODUCTS --}}
                     {{-- grid --}}
@@ -91,7 +62,7 @@
                                         <img src="/img/icon-upload.png" alt="" class="h-64 my-4  w-64"
                                             id="output">
                                     </div>
-                                    <p class="text-gray-400 mt-4 text-center">Note: PNG file only.</p>
+                                    <p class="text-gray-400 mt-4 text-center">Note: At least 2MB and PNG file only.</p>
                             </div>
                         </div>
 
@@ -225,113 +196,9 @@
                 </div>
 
             </div>
-
-            <div id="dataTable" class="hidden">
-                {{-- START OF DASHBOARD TABLE --}}
-
-                <h1 class="text-orange-900 font-bold text-4xl animate-reveal-x">
-                    <span class="text-orange-500">Da</span>ta Table
-                </h1>
-
-                <div class="border p-2 bg-gray-100 mt-4 rounded-lg w-full sm:w-3/4 m-auto" id="table">Table</div>
-
-                <div class="card-body w-full sm:w-3/4 m-auto animate-reveal">
-                    <div class="overflow-y-auto h-screen">
-                        <div class="overflow-x-auto shadow-2xl">
-                            <table class="table-auto min-w-full divide-y divide-gray-200  rounded-2xl">
-                                <thead>
-                                    <tr>
-                                        <th
-                                            class="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                                            Product Name</th>
-                                        <th
-                                            class="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                                            Image</th>
-                                        <th
-                                            class="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                                            Description</th>
-                                        <th
-                                            class="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                                            Category</th>
-                                        <th
-                                            class="px-6 py-3 bg-gray-50 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                                            ID</th>
-                                        <th
-                                            class="px-6 py-3 bg-gray-50 text-xs font-medium text-gray-500 uppercase tracking-wider text-center">
-                                            Actions</th>
-
-                                    </tr>
-                                </thead>
-                                <tbody class="divide-y divide-gray-200 text-sm">
-                                    @foreach ($products as $item)
-                                        <tr class="bg-white border-b">
-                                            <td scope="row" class="px-6 py-4 font-bold text-orange-500">
-                                                {{ $item->name }}
-                                            </td>
-                                            <td class="px-6 py-4">
-                                                <div class="flex-shrink-0 h-20 w-20">
-                                                    <img src="{{ asset('uploads/images/' . $item->images) }}"
-                                                        class="" alt="{{ $item->name }}">
-                                                </div>
-                                            </td>
-                                            <td class="px-6 py-4 w-1/2">
-                                                {{ $item->description }}
-                                            </td>
-                                            <td class="px-6 py-4">
-                                                {{ $item->category }}
-                                            </td>
-
-                                            <td class="px-6 py-4">
-                                                {{ $item->id }}
-                                            </td>
-                                            <td class="px-6 py-4 whitespace-nowrap">
-
-                                                <a href="{{ '/editproduct/' . $item['id'] }}"
-                                                    class="text-indigo-500 px-3">Update</a>
-                                                <a onclick="confirmation(event)" href=""
-                                                    class="text-red-500">Delete</a>
-                                                {{-- {{"delete/".$item['id']}} --}}
-
-                                            </td>
-                                        </tr>
-                                    @endforeach
-                                </tbody>
-                            </table>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
             {{-- END OF DASHBOARD TABLE --}}
         </div>
     </div>
     {{-- END SIDE HEADER --}}
-    <script>
-        function confirmation(ev) {
-            ev.preventDefault();
-
-            var urlToRedirect = ev.currentTarget.getAttribute('href');
-
-            swal({
-                title: "Are you sure?",
-                text: "You will not be able to recover this item!",
-                icon: "warning",
-                buttons: ["Cancel", "Delete"],
-                dangerMode: true,
-            }).then((willDelete) => {
-                if (willDelete) {
-
-                    window.location.href = '{{ '/delete/' . $item['id'] }}';
-                } else {
-                    // Handle the cancel button
-
-                    swal({
-                        icon: 'success',
-                        text: "Your product is safe!",
-                    });
-                }
-            });
-        }
-    </script>
     {{-- <script src="/display.js"></script> --}}
 @endsection
