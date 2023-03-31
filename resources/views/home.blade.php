@@ -108,8 +108,6 @@
 
             </div>
 
-
-
             <div id="showTable">
                 <div class="flex flex-col lg:flex-row lg:flex-wrap lg:-mx-2 mt-4 w-3/4 justify-center m-auto gap-2">
                     {{-- FIX THIS TO FLEX --}}
