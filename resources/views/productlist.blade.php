@@ -30,11 +30,11 @@
                     <div class="rounded-lg p-4 flex flex-col items-center">
                         <div class="w-full h-40">
                             {{-- IMAGE LOADER --}}
-                            <div class="w-32 h-32 overflow-hidden rounded-full m-auto">
+                            <div class="w-32 h-32 overflow-hidden rounded-full m-auto bg-gray-200">
                                 <img class="animate-floating w-full h-full object-cover m-auto"
                                     src="/img/nyan-cat-cropped.gif" alt="burger">
                             </div>
-                            <p class="m-auto text-gray-500 text-sm">Please wait... ฅ ̳͒•ˑ̫• ̳͒ฅ♡</p>
+                            <p class="m-auto text-gray-500 text-sm mt-4">Please wait... ฅ ̳͒•ˑ̫• ̳͒ฅ♡</p>
                         </div>
                         <div class="w-full mt-4 mb-2">
                             {{-- NAME LOADER --}}
@@ -43,8 +43,8 @@
                         </div>
                         <div class="w-full">
                             {{-- DESCRIPTION LOADER --}}
-                            <div class="bg-gray-200 rounded-2xl w-50 h-5 my-2"></div>
-                            <div class="bg-gray-200 rounded-2xl w-64 h-5"></div>
+                            <div class="bg-gray-200 rounded-2xl w-50 h-3 my-2"></div>
+                            <div class="bg-gray-200 rounded-2xl w-64 h-3"></div>
                         </div>
                     </div>
                 </div>
@@ -85,11 +85,11 @@
                     <div class="rounded-lg p-4 flex flex-col items-center">
                         <div class="w-full h-40">
                             {{-- IMAGE LOADER --}}
-                            <div class="w-32 h-32 overflow-hidden rounded-full m-auto">
+                            <div class="w-32 h-32 overflow-hidden rounded-full m-auto bg-gray-200">
                                 <img class="animate-floating w-full h-full object-cover m-auto"
                                     src="/img/nyan-cat-cropped.gif" alt="burger">
                             </div>
-                            <p class="m-auto text-gray-500 text-sm">Please wait... ฅ ̳͒•ˑ̫• ̳͒ฅ♡</p>
+                            <p class="m-auto text-gray-500 text-sm mt-4">Please wait... ฅ ̳͒•ˑ̫• ̳͒ฅ♡</p>
                         </div>
                         <div class="w-full mt-4 mb-2">
                             {{-- NAME LOADER --}}
@@ -139,11 +139,11 @@
                     <div class="rounded-lg p-4 flex flex-col items-center">
                         <div class="w-full h-40">
                             {{-- IMAGE LOADER --}}
-                            <div class="w-32 h-32 overflow-hidden rounded-full m-auto">
+                            <div class="w-32 h-32 overflow-hidden rounded-full m-auto bg-gray-200">
                                 <img class="animate-floating w-full h-full object-cover m-auto"
                                     src="/img/nyan-cat-cropped.gif" alt="burger">
                             </div>
-                            <p class="m-auto text-gray-500 text-sm">Please wait... ฅ ̳͒•ˑ̫• ̳͒ฅ♡</p>
+                            <p class="m-auto text-gray-500 text-sm mt-4">Please wait... ฅ ̳͒•ˑ̫• ̳͒ฅ♡</p>
                         </div>
                         <div class="w-full mt-4 mb-2">
                             {{-- NAME LOADER --}}
@@ -192,11 +192,11 @@
                     <div class="rounded-lg p-4 flex flex-col items-center">
                         <div class="w-full h-40">
                             {{-- IMAGE LOADER --}}
-                            <div class="w-32 h-32 overflow-hidden rounded-full m-auto">
+                            <div class="w-32 h-32 overflow-hidden rounded-full m-auto bg-gray-200">
                                 <img class="animate-floating w-full h-full object-cover m-auto"
                                     src="/img/nyan-cat-cropped.gif" alt="burger">
                             </div>
-                            <p class="m-auto text-gray-500 text-sm">Please wait... ฅ ̳͒•ˑ̫• ̳͒ฅ♡</p>
+                            <p class="m-auto text-gray-500 text-sm mt-4">Please wait... ฅ ̳͒•ˑ̫• ̳͒ฅ♡</p>
                         </div>
                         <div class="w-full mt-4 mb-2">
                             {{-- NAME LOADER --}}
@@ -246,11 +246,11 @@
                     <div class="rounded-lg p-4 flex flex-col items-center">
                         <div class="w-full h-40">
                             {{-- IMAGE LOADER --}}
-                            <div class="w-32 h-32 overflow-hidden rounded-full m-auto">
+                            <div class="w-32 h-32 overflow-hidden rounded-full m-auto bg-gray-200">
                                 <img class="animate-floating w-full h-full object-cover m-auto"
                                     src="/img/nyan-cat-cropped.gif" alt="burger">
                             </div>
-                            <p class="m-auto text-gray-500 text-sm">Please wait... ฅ ̳͒•ˑ̫• ̳͒ฅ♡</p>
+                            <p class="m-auto text-gray-500 text-sm mt-4">Please wait... ฅ ̳͒•ˑ̫• ̳͒ฅ♡</p>
                         </div>
                         <div class="w-full mt-4 mb-2">
                             {{-- NAME LOADER --}}
