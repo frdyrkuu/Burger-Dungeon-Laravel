@@ -32,7 +32,7 @@
                 </button> {{-- UPLOAD --}}
 
                 <a href="/home/dashboard" title="📋 Clasify your products"
-                    class="px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-gray-900"><i class="fa fa-table"></i>
+                    class="px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-gray-900 text-center"><i class="fa fa-table"></i>
                     <span class="ml-3 hidden text-lg" id="tt">Table</span>
                 </a> {{-- TABLE --}}
             </nav>
