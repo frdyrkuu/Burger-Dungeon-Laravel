@@ -89,13 +89,37 @@
         <section id="mobile-menu"
             class="hidden absolute bg-white w-full text-5xl flex-col justify-content-center shadow-2xl transition duration-500 animate-reveal-x">
             <nav class="flex flex-col min-h-screen items-center py-8 text-xl text-orange-900" aria-label="mobile">
-                @if (Route::has('register'))
-                    <a class="w-full text-center py-3" href="{{ route('register') }}">{{ __('Register') }}</a>
-                @endif
-                <a href="#food" class="w-full text-center py-3">Foods</a>
-                <a href="#contacts" class="w-full text-center py-6 hover:opacity-90">Contacts</a>
-                <a href="#about" class="w-full text-center py-6 hover:opacity-90">About Us</a>
+                @guest
+                    @if (Route::has('register'))
+                    @endif
+                @else
+                    <a class="w-full text-center py-3" href="" role="button" data-bs-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false" v-pre>
+                        Welcome {{ Auth::user()->name }}
+                    </a>
+                @endguest
+                <a href="/#food" class="w-full text-center py-3">Foods</a>
+                <a href="/#contacts" class="w-full text-center py-6 hover:opacity-90">Contacts</a>
+                <a href="/#about" class="w-full text-center py-6 hover:opacity-90">About Us</a>
                 <a href="/productlist" class="w-full text-center py-6 hover:opacity-90">Our Products</a>
+
+                @guest
+                    @if (Route::has('register'))
+                    @endif
+                @else
+                    <a class="w-full text-center py-3" href="{{ route('register') }}">{{ __('Register') }}</a>
+                    <a class="w-full text-center py-3" href="{{ route('logout') }}"
+                        onclick="event.preventDefault();
+             document.getElementById('logout-form').submit();">
+                        {{ __('Logout') }}
+                    </a>
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                        @csrf
+
+                    </form>
+                @endguest
+
+
             </nav>
         </section>
     </header>
