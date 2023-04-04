@@ -45,4 +45,3 @@ Burger Dungeon is a web application built with Laravel Framework. It allows user
 ## Usage
 <p>Open your web browser and navigate to http://localhost:8000 to view the application.</p>
 
-## Display
