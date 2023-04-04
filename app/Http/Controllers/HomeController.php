@@ -120,7 +120,9 @@ class HomeController extends Controller
                 $description = $_POST['description'];
                 $category = $_POST['product'];
 
-                $request->file('image')->move('uploads/images/', $final_image_name);
+                if (!$product_name  || !$description || !$category)abort(500);
+
+                    $request->file('image')->move('uploads/images/', $final_image_name);
                 $photo = new Products();
                 $photo->name = $product_name;
                 $photo->description = $description;
