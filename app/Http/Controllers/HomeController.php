@@ -35,7 +35,6 @@ class HomeController extends Controller
         $drinksCount = Products::where('category', 'drinks')->count();
         $icecreamCount = Products::where('category', 'icecream')->count();
 
-
         return view('home', [
             'products' => $data, 'burgerCount' => $burgerCount, 'friesCount' => $friesCount,
             'barbequeCount' => $barbequeCount, 'drinksCount' => $drinksCount, 'icecreamCount' => $icecreamCount
