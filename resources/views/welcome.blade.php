@@ -87,7 +87,8 @@
                 <br>
             </article>
             <div class="w-full sm:w-5/4 transition duration-500 hover:scale-110">
-                <img class="animate-waving-hand w-11/12 m-auto sm:m-none object-cover" src="img/burger.png" alt="burger">
+                <img class="animate-waving-hand w-11/12 m-auto sm:m-none object-cover" src="img/burger.png"
+                    alt="burger">
             </div>
         </section>
         {{-- END LANDING PAGE --}}
