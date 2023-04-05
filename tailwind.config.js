@@ -44,9 +44,9 @@ module.exports = {
 
 
                 openmenu: {
-                    '0%' : {transform: 'scaleY(0)'},
-                    '80%' : {transform: 'scaleY(1.2)'},
-                    '100%' : {transform: 'scaleY(1)'},
+                    '0%': { transform: 'scaleY(0)' },
+                    '80%': { transform: 'scaleY(1.2)' },
+                    '100%': { transform: 'scaleY(1)' },
                 },
             },
             animation: {
@@ -54,12 +54,12 @@ module.exports = {
                 floating: 'floating 3s linear infinite',
                 reveal: 'reveal 1s',
                 'reveal-x': 'reveal-x 1s',
-                'open-menu' : 'openmenu 0.5s ease-in-out forwards',
+                'open-menu': 'openmenu 0.5s ease-in-out forwards',
             },
 
-            screens:{
-                'widescreen' : {'raw':'(min-aspect-ratio: 3/2)'},
-                'tallscreen' : {'raw':'(min-aspect-ratio: 13/20)'},
+            screens: {
+                'widescreen': { 'raw': '(min-aspect-ratio: 3/2)' },
+                'tallscreen': { 'raw': '(min-aspect-ratio: 13/20)' },
             }
         },
     },
