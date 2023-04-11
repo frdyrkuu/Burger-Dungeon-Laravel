@@ -5,6 +5,7 @@ use App\Http\Controllers\PhotoController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductlistController;
+use App\Http\Controllers\SearchController;
 
 /*
 |--------------------------------------------------------------------------
@@ -44,3 +45,7 @@ route::get('/editproduct/{id}', [HomeController::class, 'edit'])->middleware('au
 route::put('/update-data/{id}', [HomeController::class, 'update'])->middleware('auth');
 
 Route::get('/preview/{id}', [ProductlistController::class, 'preview']);
+
+Route::get('/search', [SearchController::class, 'search'])->name('search');
+
+Route::get('/home/userlist', [HomeController::class, 'userlist'])->middleware('auth');

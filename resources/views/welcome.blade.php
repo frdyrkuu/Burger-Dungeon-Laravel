@@ -166,7 +166,7 @@
                         heart of the Veggie à la Queen burger is a mouth-watering vegetable patty, made with a flavorful
                         blend of fresh vegetables and herbs. The patty is then topped with creamy avocado, crisp
                         lettuce, juicy tomato, and tangy pickles, all nestled between two soft and fluffy buns.</p>
-                    <button href="preview.html" type="button" id="prev3"
+                    <button type="button" id="prev3"
                         class="showmodal3 text-center bg-orange-500 text-white py-2  w-1/2 rounded-lg font-semibold mt-4 hover:bg-orange-300 focus:scale-95 transition-all duration-200 ease-out">Preview</button>
                 </li>
 

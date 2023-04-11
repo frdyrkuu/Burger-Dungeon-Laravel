@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Products;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 use RealRashid\SweetAlert\Facades\Alert;
@@ -55,8 +56,6 @@ class HomeController extends Controller
         if (!$data) abort(404);
         Alert::success('Product has been deleted!', 'You may see it on the dashboard');
         $data->delete();
-
-
 
         return redirect()->back();
     }
@@ -120,9 +119,9 @@ class HomeController extends Controller
                 $description = $_POST['description'];
                 $category = $_POST['product'];
 
-                if (!$product_name  || !$description || !$category)abort(500);
+                if (!$product_name  || !$description || !$category) abort(500);
 
-                    $request->file('image')->move('uploads/images/', $final_image_name);
+                $request->file('image')->move('uploads/images/', $final_image_name);
                 $photo = new Products();
                 $photo->name = $product_name;
                 $photo->description = $description;
@@ -143,5 +142,12 @@ class HomeController extends Controller
             Alert::error('Upload Failed!', 'Image must be on 2MB');
             return redirect()->back();
         }
+    }
+
+    public function userlist()
+    {
+        $data = User::paginate(10);
+
+        return view('userlist', ['users' => $data]);
     }
 }

@@ -60,7 +60,7 @@ function modalDefault() {
 
         document.querySelector('.product-desc').textContent = desc3;
 
-    });;
+    });
 
     closeModal.addEventListener('click', function () {
         modal.classList.add('hidden');
