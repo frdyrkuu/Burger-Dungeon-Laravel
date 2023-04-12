@@ -3,7 +3,7 @@
 @section('content')
     <div id="dataTable" class="">
         {{-- START OF DASHBOARD TABLE --}}
-        <div class="float-right mr-60">
+        <div class="float-left lg:float-right mr-60">
             <form action="{{ url('/search') }}" type="get">
                 <input type="search" name="query" value="{{ app('request')->input('query') }}"
                     placeholder="Search for Product" class="border border-gray-300 px-2 p-2 w-96 bg-gray-100 rounded-xl"
@@ -12,9 +12,10 @@
                     class="bg-orange-500 p-2 px-4 rounded-xl text-white font-semibold text-lg m-2">Search</button>
             </form>
         </div>
-        <h1 class="text-orange-900 font-bold text-4xl lg:px-20">
+        <h1 class="text-orange-900 font-bold text-4xl lg:ml-52 lg:px-20">
             <span class="text-orange-500">Da</span>ta Table
         </h1>
+
         <div class="border p-2 bg-gray-100 mt-4 rounded-lg w-full sm:w-3/4 m-auto" id="table">Table</div>
         <div class="card-body w-full sm:w-3/4 m-auto">
             <div class="h-screen">
