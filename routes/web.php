@@ -47,5 +47,6 @@ route::put('/update-data/{id}', [HomeController::class, 'update'])->middleware('
 Route::get('/preview/{id}', [ProductlistController::class, 'preview']);
 
 Route::get('/search', [SearchController::class, 'search'])->name('search');
+Route::get('/searchuser', [SearchController::class, 'searchuser'])->name('search');
 
 Route::get('/home/userlist', [HomeController::class, 'userlist'])->middleware('auth');

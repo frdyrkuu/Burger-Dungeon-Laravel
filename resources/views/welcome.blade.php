@@ -303,7 +303,7 @@
             </a>
             <ul class="flex flex-wrap items-center mb-6 text-sm text-white sm:mb-0">
                 <li>
-                    <a href="#" class="hover:underline md:mr-6 ">About</a>
+                    <a href="#about" class="hover:underline md:mr-6 ">About</a>
                 </li>
                 <li>
                     @if (Route::has('login'))
@@ -317,7 +317,7 @@
                     @endif
                 </li>
                 <li>
-                    <a href="#" class="hover:underline">Contact</a>
+                    <a href="#contacts" class="hover:underline">Contact</a>
                 </li>
             </ul>
         </div>
