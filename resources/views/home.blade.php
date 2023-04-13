@@ -82,13 +82,11 @@
                                 <input type="text" name="product_name" id=""
                                     class="bg-gray-50 p-2 px-2 rounded-xl border border-gray-400 w-full" required>
 
-
                                 <label for="message"
                                     class="block mb-2 text-sm font-medium text-gray-900 mt-3">Details:</label>
                                 <textarea id="message" rows="8" name="description"
                                     class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-orange-500 focus:border-orange-500 "
                                     placeholder="Write your product description here..." required></textarea>
-
 
                                 <label for="categories" class="block mb-2 text-sm font-medium text-gray-900 mt-3">Select an
                                     option:</label>
