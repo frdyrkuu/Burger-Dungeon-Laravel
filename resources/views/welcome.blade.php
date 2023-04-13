@@ -112,8 +112,8 @@
 
                 <!-- CARD 1 -->
                 <li
-                    class=" w-full sm:w-5/6 flex flex-col items-center bg-white py-6 rounded-3xl shadow-2xl transition duration-500 hover:scale-110">
-                    <img src="img/img1.jpg" alt="product1" class="w-3/4 mb-6 rounded-xl" id="product-img-1">
+                    class=" w-full sm:w-5/6 flex flex-col items-center bg-white py-6 rounded-3xl shadow-2xl">
+                    <img src="img/img1.jpg" alt="product1" class="w-3/4 mb-6 rounded-xl hover:scale-110 transition duration-500" id="product-img-1">
                     <h3 class="font-['Poppins'] font-bold text-3xl text-center text-orange-500 px-4"
                         id="product-title-1">
                         Dungeon à la King
@@ -132,8 +132,8 @@
 
                 <!-- CARD 2 -->
                 <li
-                    class=" w-full sm:w-5/6 flex flex-col items-center bg-white py-6 rounded-3xl shadow-2xl transition duration-500 hover:scale-110">
-                    <img src="img/img2.jpg" alt="product1" class="w-3/4 mb-6 rounded-xl" id="product-img-2">
+                    class=" w-full sm:w-5/6 flex flex-col items-center bg-white py-6 rounded-3xl shadow-2xl">
+                    <img src="img/img2.jpg" alt="product1" class="w-3/4 mb-6 rounded-xl hover:scale-110 transition duration-500" id="product-img-2">
                     <h3 class="font-['Poppins'] font-bold text-3xl text-center text-orange-500 px-4"
                         id="product-title-2"> Double Sheesh`
                         Burger
@@ -152,8 +152,8 @@
                 <!-- CARD 3 -->
 
                 <li
-                    class="w-full sm:w-5/6 flex flex-col items-center bg-white py-6 rounded-3xl shadow-2xl transition duration-500 hover:scale-110">
-                    <img src="img/img3.jpg" alt="product1" class="w-3/4 mb-6 rounded-xl" id="product-img-3">
+                    class="w-full sm:w-5/6 flex flex-col items-center bg-white py-6 rounded-3xl shadow-2xl">
+                    <img src="img/img3.jpg" alt="product1" class="w-3/4 mb-6 rounded-xl hover:scale-110 transition duration-500" id="product-img-3">
                     <h3 class="font-['Poppins'] font-bold text-3xl text-center text-orange-500 px-4"
                         id="product-title-3"> Veggie à la Queen
                     </h3>
