@@ -32,6 +32,7 @@ class SearchController extends Controller
 
         $results = User::where('name', 'like', '%' . $query . '%')
             ->orWhere('email', 'like', '%' . $query . '%')
+            ->orWhere('id', 'like', '%' . $query . '%')
             ->paginate(5);
 
         $results->appends(['query' => $query]);

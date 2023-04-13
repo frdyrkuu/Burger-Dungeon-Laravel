@@ -8,13 +8,13 @@
         </h1>
 
         <div class="flex flex-wrap lg:flex-no-wrap mt-10">
-            <div class="w-full lg:w-auto lg:ml-auto mx-10 lg:mr-60">
+            <div class="w-full lg:w-auto lg:mx-auto mx-10 lg:mr-60">
                 <form action="{{ url('/search') }}" type="get">
                     <input type="search" name="query" value="{{ app('request')->input('query') }}"
                         placeholder="Search for Product"
-                        class="border border-gray-300 px-2 py-2 w-full lg:w-96 bg-gray-100 rounded-xl" required>
+                        class="border border-gray-300 px-2 py-2 w-full sm:w-1/2 float-right mr-0 sm:mr-32 lg:mr-0 lg:float-none lg:w-96 bg-gray-100 rounded-xl" required>
                     <button type="submit" value="Search"
-                        class="bg-orange-500 p-2 px-4 rounded-xl text-white font-semibold text-lg m-2">Search</button>
+                        class="bg-orange-500 p-2 px-4 rounded-xl text-white font-semibold text-lg m-2 hidden lg:inline-block">Search</button>
                 </form>
             </div>
         </div>
