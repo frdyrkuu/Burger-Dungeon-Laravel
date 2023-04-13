@@ -28,6 +28,12 @@ class HomeController extends Controller
     public function index()
     {
 
+        /*
+        |--------------------------------------------------------------------------
+        | FUNCTION GET DATA COUNT PER CATEGORY
+        |--------------------------------------------------------------------------
+        */
+
         $data = Products::paginate(5);
 
         $burgerCount = Products::where('category', 'burger')->count();
@@ -44,16 +50,31 @@ class HomeController extends Controller
 
     public function datatable()
     {
+
+        /*
+        |--------------------------------------------------------------------------
+        | FUNCTION GET DATA FROM PRODUCT TABLE - FOR DATA TABLE - PAGINATED
+        |--------------------------------------------------------------------------
+        */
+
         $data = Products::paginate(5);
 
         return view('datatable', ['products' => $data]);
     }
 
     public function delete($id)
+
     {
+        /*
+        |--------------------------------------------------------------------------
+        | FUNCTION DELTE DATA ON THE PRODUCT TABLE
+        |--------------------------------------------------------------------------
+        */
 
         $data = Products::find($id);
+
         if (!$data) abort(404);
+
         Alert::success('Product has been deleted!', 'You may see it on the dashboard');
         $data->delete();
 
@@ -62,6 +83,13 @@ class HomeController extends Controller
 
     public function edit($id)
     {
+
+        /*
+        |--------------------------------------------------------------------------
+        | FUNCTION EDIT DATA ON THE PRODUCT TABLE
+        |--------------------------------------------------------------------------
+        */
+
         $product = Products::find($id);
 
         return view('editproduct', ['product' => $product]);
@@ -69,8 +97,16 @@ class HomeController extends Controller
 
     public function update(Request $request, $id)
     {
+
+        /*
+        |--------------------------------------------------------------------------
+        | FUNCTION UPDATE DATA ON THE PRODUCT TABLE
+        |--------------------------------------------------------------------------
+        */
+
         $product = Products::find($id);
 
+        // INITIALIZING PRODUCT DATA INFORMATION
         $product->name = $request->input('newTitle');
         $product->description = $request->input('newDesc');
         $product->category = $request->input('newProduct');
@@ -95,11 +131,23 @@ class HomeController extends Controller
 
     public function create()
     {
+        /*
+        |--------------------------------------------------------------------------
+        | FUNCTION VIEW DATA ON PRODUCT TABLE
+        |--------------------------------------------------------------------------
+        */
+
         return  view('upload');
     }
 
     public function store(Request $request)
     {
+
+        /*
+        |--------------------------------------------------------------------------
+        | FUNCTION STORE DATA ON PRODUCT TABLE
+        |--------------------------------------------------------------------------
+        */
 
         if (!$request->hasFile('image')) abort(500);
 
@@ -146,6 +194,13 @@ class HomeController extends Controller
 
     public function userlist()
     {
+
+        /*
+        |--------------------------------------------------------------------------
+        | FUNCTION GET DATA ON USER TABLE
+        |--------------------------------------------------------------------------
+        */
+
         $data = User::paginate(10);
 
         return view('userlist', ['users' => $data]);
