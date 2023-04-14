@@ -1,5 +1,5 @@
 @extends('layouts.prodlayout')
-<hr id="burger" class="mx-auto bg-transparent w-1/2 h-1">
+<hr id="burger" class="mx-auto border-transparent w-1/2 h-1">
 @section('content')
     <div>
         <h1 class="text-3xl sm:text-5xl font-bold text-orange-500 my-5 p-2"><span class="text-orange-900">Bu</span>rger

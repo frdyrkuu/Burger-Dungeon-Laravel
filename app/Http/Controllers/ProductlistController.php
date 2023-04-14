@@ -37,6 +37,7 @@ class ProductlistController extends Controller
 
         $query = $request->input('query');
 
+        if (!$query) return view('/welcome');
 
         $results = Products::where('name', 'like', '%' . $query . '%')
             ->orWhere('description', 'like', '%' . $query . '%')

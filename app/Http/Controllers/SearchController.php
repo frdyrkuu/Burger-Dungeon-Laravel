@@ -17,6 +17,8 @@ class SearchController extends Controller
     {
         $query = $request->input('query');
 
+        if (!$query) return view('/welcome');
+
         $results = Products::where('name', 'like', '%' . $query . '%')
             ->orWhere('description', 'like', '%' . $query . '%')
             ->orWhere('category', 'like', '%' . $query . '%')
@@ -29,6 +31,8 @@ class SearchController extends Controller
     public function searchuser(Request $request)
     {
         $query = $request->input('query');
+
+        if (!$query) return view('/welcome');
 
         $results = User::where('name', 'like', '%' . $query . '%')
             ->orWhere('email', 'like', '%' . $query . '%')

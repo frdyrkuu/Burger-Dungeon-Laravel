@@ -56,7 +56,7 @@
                     <div class="w-32 h-32 overflow-hidden rounded-full mx-auto -mb-16 bg-gray-200">
                         <img class="w-full h-full object-cover m-auto" src="/img/sad-cat.png" alt="burger">
                     </div>
-                    <h2 class="m-auto text-center text-lg mt-20 text-orange-500 font-semibold">Nothing found here</h2>
+                    <h2 class="m-auto text-center text-lg mt-20 text-orange-500 font-semibold">No results found</h2>
                 </div>
             @endif
 
@@ -79,7 +79,7 @@
                 </div>
                 <input type="search" name="query" value="{{ app('request')->input('query') }}"
                     class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500"
-                    placeholder="Search more . . ." required>
+                    placeholder="Find more..." required>
                 <button type="submit" value="search"
                     class="text-white absolute right-2.5 bottom-2.5 border-b-2 border-orange-700 bg-orange-500 hover:bg-orange-800 focus:ring-4 focus:outline-none focus:ring-orange-300 font-medium rounded-lg text-sm px-4 py-2">Search</button>
             </div>

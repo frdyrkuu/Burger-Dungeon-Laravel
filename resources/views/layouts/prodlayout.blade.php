@@ -62,8 +62,8 @@
                 </div>
             </div>
         </header>
-
     </div>
+
     <main class="max-w-7xl mx-auto ">
         @yield('content')
 
