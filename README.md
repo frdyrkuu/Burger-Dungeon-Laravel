@@ -29,6 +29,7 @@ Burger Dungeon is a web application built with Laravel Framework. It allows user
 <p>cp .env.example .env</p>
 
 ### 4. Generate a new application key:
+<p>npm install</p>
 <p>php artisan key:generate</p>
 
 ### 5. Migrate the database tables:
