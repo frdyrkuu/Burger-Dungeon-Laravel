@@ -24,12 +24,29 @@ class ProductlistController extends Controller
         ]);
     }
 
-    public function preview($id){
+    public function preview($id)
+    {
 
         $product = Products::find($id);
-        if(!$product) abort(404);
+        if (!$product) abort(404);
         return view('preview', ['product' => $product]);
     }
 
+    public function searchproducts(Request $request)
+    {
 
+        $query = $request->input('query');
+
+
+        $results = Products::where('name', 'like', '%' . $query . '%')
+            ->orWhere('description', 'like', '%' . $query . '%')
+            ->orWhere('category', 'like', '%' . $query . '%')
+            ->orderBy('category', 'asc')
+            ->get();
+
+
+        return view('searchproducts', [
+            'results' => $results, 'query' => $query
+        ]);
+    }
 }

@@ -53,10 +53,10 @@
                 </h1>
                 <div class="overflow-x-auto mt-2">
                     <nav class="flex px-2 text-center text-orange-900 text-lg font-light mb-5 whitespace-nowrap gap-3">
-                        <a href="#burger" class="px-4 py-2">Burger</a>
-                        <a href="#fries" class="px-4 py-2">Fries</a>
-                        <a href="#barbeque" class="px-4 py-2">Barbeque</a>
-                        <a href="#drinks" class="px-4 py-2">Drinks</a>
+                        <a href="/productlist#burger" class="px-4 py-2">Burger</a>
+                        <a href="/productlist#fries" class="px-4 py-2">Fries</a>
+                        <a href="/productlist#barbeque" class="px-4 py-2">Barbeque</a>
+                        <a href="/productlist#drinks" class="px-4 py-2">Drinks</a>
                         <a href="#icecream" class="px-4 py-2">Ice Cream</a>
                     </nav>
                 </div>

@@ -38,6 +38,8 @@ Route::get('/productlist', function () {
 
 Route::get('/productlist', [ProductlistController::class, 'List']);
 Route::get('/preview/{id}', [ProductlistController::class, 'preview']);
+Route::get('/searchproducts', [ProductlistController::class, 'searchproducts'])->name('searchproducts');
+
 
 ###############################################################################
 
@@ -85,3 +87,4 @@ Route::get('/home/userlist', [HomeController::class, 'userlist'])->middleware('a
 // SEARCH FUNCTION ROUTES
 Route::get('/search', [SearchController::class, 'search'])->name('search');
 Route::get('/searchuser', [SearchController::class, 'searchuser'])->name('search');
+
