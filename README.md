@@ -26,7 +26,7 @@ Burger Dungeon is a web application built with Laravel Framework. It allows user
 <p>composer install</p>
 
 ### 3. Rename the .env.example file to .env and fill in the necessary configuration settings:
-<p>cp .env.example .env</p>
+<p>cp .env.example -> .env</p>
 
 ### 4. Generate a new application key:
 <p>npm install</p>
