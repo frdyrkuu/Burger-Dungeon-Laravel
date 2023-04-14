@@ -55,9 +55,7 @@
                                             </div>
                                             <div class="ml-4">
                                                 <div class="text-gray-800 font-medium">
-                                                    {{ substr($item->email, 0, 5) }}{{ str_repeat('*', 5) }}
-
-                                                    {{ substr($item->email, strpos($item->email, '@') + 1) }}
+                                                    {{ substr($item->email, 0, 5) }}{{ str_repeat('*', 5) }}{{ substr($item->email, strpos($item->email, '@') + 0) }}
                                                 </div>
                                             </div>
                                     </td>
