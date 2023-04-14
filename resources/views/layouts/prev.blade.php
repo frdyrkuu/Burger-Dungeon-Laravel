@@ -71,29 +71,30 @@
     </main>
 
     {{-- START FOOTER --}}
-    <footer class="p-4 bg-orange-900 rounded-lg shadow md:px-6 md:py-8 lg:mt-96">
-        <div class="sm:flex sm:items-center sm:justify-between">
-            <a href="/" class="flex items-center mb-4 sm:mb-0">
-                <span class="self-center text-4xl font-bold whitespace-nowrap text-white font-['Poppins']"><span
-                        class="text-orange-500">bu</span>rger dungeon.</span>
-            </a>
-            <ul class="flex flex-wrap items-center mb-6 text-sm text-white sm:mb-0 gap-4">
-                <li>
-                    <a href="#" class="hover:underline md:mr-6 ">About</a>
-                </li>
-                <li>
-                    <a href="#" class="hover:underline">Contact</a>
-                </li>
-            </ul>
-        </div>
-        <hr class="my-6 border-white sm:mx-auto lg:my-8" />
-        <span class="block text-sm text-white sm:text-center ">©<a href="https://github.com/frdyrkuu"
-                class="hover:underline" target="_blank" rel="noopener noreferrer">frdyrkuu</a>.
-            All
-            Rights Reserved.
-        </span>
-    </footer>
+
     {{-- END FOOTER --}}
 </body>
+<footer class="p-4 bg-orange-900 rounded-lg shadow md:px-6 md:py-8 lg:mt-96">
+    <div class="sm:flex sm:items-center sm:justify-between">
+        <a href="/" class="flex items-center mb-4 sm:mb-0">
+            <span class="self-center text-4xl font-bold whitespace-nowrap text-white font-['Poppins']"><span
+                    class="text-orange-500">bu</span>rger dungeon.</span>
+        </a>
+        <ul class="flex flex-wrap items-center mb-6 text-sm text-white sm:mb-0 gap-4">
+            <li>
+                <a href="#" class="hover:underline md:mr-6 ">About</a>
+            </li>
+            <li>
+                <a href="#" class="hover:underline">Contact</a>
+            </li>
+        </ul>
+    </div>
+    <hr class="my-6 border-white sm:mx-auto lg:my-8" />
+    <span class="block text-sm text-white sm:text-center ">©<a href="https://github.com/frdyrkuu"
+            class="hover:underline" target="_blank" rel="noopener noreferrer">frdyrkuu</a>.
+        All
+        Rights Reserved.
+    </span>
+</footer>
 
 </html>

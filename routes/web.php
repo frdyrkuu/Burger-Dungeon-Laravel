@@ -1,7 +1,6 @@
 <?php
 
 use App\Http\Controllers\HomeController;
-use App\Http\Controllers\PhotoController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductlistController;
@@ -40,6 +39,7 @@ Route::get('/productlist', function () {
 Route::get('/productlist', [ProductlistController::class, 'List']);
 Route::get('/preview/{id}', [ProductlistController::class, 'preview']);
 
+###############################################################################
 
 /*
 |--------------------------------------------------------------------------
