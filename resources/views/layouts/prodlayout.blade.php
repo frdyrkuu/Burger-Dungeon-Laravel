@@ -57,7 +57,7 @@
                         <a href="/productlist#fries" class="px-4 py-2">Fries</a>
                         <a href="/productlist#barbeque" class="px-4 py-2">Barbeque</a>
                         <a href="/productlist#drinks" class="px-4 py-2">Drinks</a>
-                        <a href="#icecream" class="px-4 py-2">Ice Cream</a>
+                        <a href="/productlist#icecream" class="px-4 py-2">Ice Cream</a>
                     </nav>
                 </div>
             </div>

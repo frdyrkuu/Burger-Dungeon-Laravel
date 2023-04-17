@@ -100,7 +100,7 @@
                             </svg>
                         </div>
                         <input type="search" name="query" value="{{ app('request')->input('query') }}"
-                            class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50"
                             placeholder="Search for Products" required>
                         <button type="submit" value="search"
                             class="text-white absolute right-2.5 bottom-2.5 border-b-2 border-orange-700 bg-orange-500 hover:bg-orange-800 focus:ring-4 focus:outline-none focus:ring-orange-300 font-medium rounded-lg text-sm px-4 py-2">Search</button>
