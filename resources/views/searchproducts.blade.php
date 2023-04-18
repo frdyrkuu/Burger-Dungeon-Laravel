@@ -1,7 +1,7 @@
 @extends('layouts.prodlayout')
 
 @section('content')
-    <hr id="burger" class="mx-auto invisible w-1/2 h-1">
+    <hr id="partition_primary" class="mx-auto invisible w-1/2 h-1">
 
     <div>
         <h1 class="text-xl sm:text-2xl font-bold text-orange-500 my-5 p-2"><span class="text-orange-900">Tr</span>ying to
@@ -63,7 +63,7 @@
         </div>
     </div>
 
-
+    {{-- SEARCHBAR  --}}
 
     <div class="flex flex-col justify-center items-center m-auto mt-20 ">
         <form action="{{ url('/searchproducts') }}" class="animate-reveal  m-auto w-4/5 md:w-1/2">
@@ -87,7 +87,7 @@
         <a href="/productlist" class="text-orange-900 underline mt-2">See more</a>
     </div>
 
-    <hr id="fries" class="mx-auto bg-orange-900 w-1/2 h-1 my-32">
+    <hr id="partition" class="mx-auto bg-orange-900 w-1/2 h-1 my-32">
 
     <script src="/loader.js"></script>
     <hr id="drinks" class="mx-auto bg-transparent w-1/2 h-1 my-10 border-transparent">
