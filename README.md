@@ -19,30 +19,30 @@ Burger Dungeon is a web application built with Laravel Framework. It allows user
 ## Installation
 
 ### 1. Clone the repository to your local machine:
-<p>git clone https://github.com/frdyrkuu/Burger-Dungeon-Laravel.git</p>
+<pre>git clone https://github.com/frdyrkuu/Burger-Dungeon-Laravel.git</pre>
 
 ### 2. Install the dependencies using Composer:
-<p>cd Burger-Dungeon-Laravel</p>
-<p>composer install</p>
+<pre>cd Burger-Dungeon-Laravel</pre>
+<pre>composer install</pre>
 
 ### 3. Rename the .env.example file to .env and fill in the necessary configuration settings:
-<p>cp .env.example -> .env</p>
+<pre>cp .env.example -> .env</pre>
 
 ### 4. Generate a new application key:
-<p>npm install</p>
-<p>php artisan key:generate</p>
+<pre>npm install</pre>
+<pre>php artisan key:generate</pre>
 
 ### 5. Migrate the database tables:
-<p>php artisan migrate</p>
+<pre>php artisan migrate</pre>
 
 ### 6. Seed the database with sample data:
-<p>php artisan db:seed</p>
+<pre>php artisan db:seed</pre>
 
 ### 7. Start the local development server:
-<p>php artisan serve</p>
+<pre>php artisan serve</pre>
 
 
 
 ## Usage
-<p>Open your web browser and navigate to http://localhost:8000 to view the application.</p>
+<pre>Open your web browser and navigate to http://localhost:8000 to view the application.</pre>
 
